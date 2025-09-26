@@ -1,0 +1,6 @@
+2137,Codeforces Round 1047 (Div. 3),E,Mexification,0.5886,15675,https://codeforces.com/contest/2137/problem/E [s]
+2139,Codeforces Round 1048 (Div. 2),D,Antiamuny Wants to Learn Swap,0.7654,12368,https://codeforces.com/contest/2139/problem/D [s]
+https://atcoder.jp/contests/abc422/tasks/abc422_f [only tested on gpt 5 so far]
+https://atcoder.jp/contests/abc422/tasks/abc422_g [only tested on gpt 5 so far]
+https://codeforces.com/contest/2090/problem/B [b]
+https://codeforces.com/contest/2067/problem/D [b]
