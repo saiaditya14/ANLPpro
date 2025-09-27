@@ -5,3 +5,8 @@ https://atcoder.jp/contests/abc422/tasks/abc422_g [only tested on gpt 5 so far]
 https://codeforces.com/contest/2090/problem/B [b]
 https://codeforces.com/contest/2067/problem/D [b]
 https://codeforces.com/problemset/problem/2108/D [s/gore]
+https://codeforces.com/problemset/problem/2127/C [gpt 5 first got it wrong then right some evidence of reasoning]
+https://codeforces.com/contest/2101/problem/C    [gpt 5 failed then just looked up solutions]
+https://codeforces.com/problemset/problem/2107/C [gpt 5 failed then just looked up solutions]
+https://codeforces.com/problemset/problem/2127/B [gpt 5 completely bricked, the Chain of thought is very enlightening]
+
