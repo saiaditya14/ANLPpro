@@ -1,0 +1,3 @@
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --user-data-dir="C:\Users\Lenovo\AppData\Local\Google\Chrome\User Data" --remote-debugging-port=49688 "https://codeforces.com/contest/2142/problem/D"
+
+http://127.0.0.1:9333/json/version
