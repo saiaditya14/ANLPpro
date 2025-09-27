@@ -7,6 +7,9 @@ https://codeforces.com/contest/2067/problem/D [b]
 https://codeforces.com/problemset/problem/2108/D [s/gore]
 https://codeforces.com/problemset/problem/2127/C [gpt 5 first got it wrong then right some evidence of reasoning]
 https://codeforces.com/contest/2101/problem/C    [gpt 5 failed then just looked up solutions]
-https://codeforces.com/problemset/problem/2107/C [gpt 5 failed then just looked up solutions]
+https://codeforces.com/problemset/problem/2107/C [gpt 5 failed then just looked up solutions, gemini failed in outputs]
 https://codeforces.com/problemset/problem/2127/B [gpt 5 completely bricked, the Chain of thought is very enlightening]
-
+https://codeforces.com/contest/2102/problem/D    [gemini 2.5 pro failed code in outputs]
+https://codeforces.com/contest/2102/problem/E    [gemini 2.5 pro failed code in outputs]
+https://codeforces.com/contest/2107/problem/F1   [gemini 2.5 pro failed, couldnt even guess sample outputs correctly]
+https://codeforces.com/contest/2107/problem/F2
