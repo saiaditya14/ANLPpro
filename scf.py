@@ -61,7 +61,7 @@ PROMPT_BASE = (
 )
 FOLLOWUP_PROMPT = "please continue thinking and give me final c++ file"
 MAX_FOLLOWUPS = 4
-PAUSE_BETWEEN_IMAGES = 1.0
+PAUSE_BETWEEN_IMAGES = 10.0
 MIN_CPP_LINES = 8
 
 # ---------- Helpers ----------
