@@ -1,0 +1,19 @@
+api:
+  base_url: "https://codeforces.com/api"
+  delay_between_requests: 2  # seconds
+  batch_size: 50
+  batch_delay: 2  # seconds
+
+analysis:
+  days_to_analyze: 90
+  max_problematic_threshold: 3
+  max_rating_threshold: 1400 
+
+files:
+  user_list: "scripts/cheaterdb/list.json"
+  output_all: "scripts/cheaterdb/suspicious_users.json"
+  output_filtered: "scripts/cheaterdb/filtered_problems.json"
+
+processing:
+  max_users: 10
+  enable_debug: true

@@ -1,0 +1,82 @@
+{
+  "-0.50": {
+    "total_submissions": 2144,
+    "suspicious_problems_count": 3,
+    "suspicious_problems": {
+      "342_A": {
+        "problem_name": "Xenia and Divisors",
+        "contest_id": 342,
+        "problem_index": "A",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_3_months"
+      },
+      "1594_C": {
+        "problem_name": "Make Them Equal",
+        "contest_id": 1594,
+        "problem_index": "C",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_3_months"
+      },
+      "1742_E": {
+        "problem_name": "Scuza",
+        "contest_id": 1742,
+        "problem_index": "E",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_3_months"
+      }
+    }
+  },
+  ".sj": {
+    "total_submissions": 402,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2123_D": {
+        "problem_name": "Binary String Battle",
+        "contest_id": 2123,
+        "problem_index": "D",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_3_months"
+      }
+    }
+  }
+}

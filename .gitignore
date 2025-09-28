@@ -1,5 +1,8 @@
 h1
 h2
 cf_flags_output_allwa
-screenshots
+screenshots2
 creds
+outputs
+.env
+__pycache__
