@@ -96,11 +96,11 @@ def analyze_submissions(submissions: List[Dict], api: CodeforcesAPI, cfg: DictCo
 def main(cfg: DictConfig):
     # Load user list with optional limit for testing
     all_users = load_user_list(cfg.files.user_list)
-    user_list = all_users[:cfg.processing.max_users] if cfg.processing.max_users else all_users
+    user_list = all_users[cfg.processing.users_l:cfg.processing.users_r] if cfg.processing.users_r else all_users
     
     print(f"Loaded {len(user_list)} users from {cfg.files.user_list}")
-    if cfg.processing.max_users:
-        print(f"Limited to {cfg.processing.max_users} users for testing")
+    if cfg.processing.users_r and cfg.processing.users_l:
+        print(f"Testing with users from index {cfg.processing.users_l} to {cfg.processing.users_r}")
     
     if not user_list:
         print("No users found in user list file")

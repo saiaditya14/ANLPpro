@@ -11,9 +11,10 @@ analysis:
 
 files:
   user_list: "scripts/cheaterdb/list.json"
-  output_all: "scripts/cheaterdb/suspicious_users.json"
-  output_filtered: "scripts/cheaterdb/filtered_problems.json"
+  output_all: "scripts/cheaterdb/suspicious_users_100-500.json"
+  output_filtered: "scripts/cheaterdb/filtered_problems100-500.json"
 
 processing:
-  max_users: 10
+  users_l: 100
+  users_r: 500
   enable_debug: true
