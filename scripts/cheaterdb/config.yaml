@@ -9,12 +9,12 @@ analysis:
   max_problematic_threshold: 3
   max_rating_threshold: 1400 
 
-files:
-  user_list: "scripts/cheaterdb/list.json"
-  output_all: "scripts/cheaterdb/suspicious_users_100-500.json"
-  output_filtered: "scripts/cheaterdb/filtered_problems100-500.json"
-
 processing:
-  users_l: 100
+  users_l: 0
   users_r: 500
   enable_debug: true
+
+files:
+  user_list: "scripts/cheaterdb/list.json"
+  output_all: "scripts/cheaterdb/suspicious_users_${processing.users_l}-${processing.users_r}.json"
+  output_filtered: "scripts/cheaterdb/filtered_problems_${processing.users_l}-${processing.users_r}.json"

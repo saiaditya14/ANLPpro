@@ -144,64 +144,30 @@ def main(cfg: DictConfig):
     # Save all results
     with open(cfg.files.output_all, 'w') as f:
         json.dump(all_suspicious_users, f, indent=2)
-    
-    # Create filtered results
-    filtered_results = {}
+
+    # Create a simplified list of unique problems for the filtered output
+    unique_problems = {}
     for username, data in all_suspicious_users.items():
-        filtered_problems = {}
         for problem_key, problem_data in data['suspicious_problems'].items():
-            if (problem_data.get('submission_period') == f'last_{cfg.analysis.days_to_analyze}_days' and 
-                (problem_data.get('problem_rating') is None or problem_data.get('problem_rating', 0) <= cfg.analysis.max_rating_threshold)):
-                filtered_problems[problem_key] = problem_data
-        
-        if filtered_problems:
-            filtered_results[username] = {
-                'total_submissions': data['total_submissions'],
-                'suspicious_problems_count': len(filtered_problems),
-                'suspicious_problems': filtered_problems,
-                'filter_criteria': f'last_{cfg.analysis.days_to_analyze}_days_rating_{cfg.analysis.max_rating_threshold}_or_lower'
-            }
-    
-    # Save filtered results
+            if problem_key not in unique_problems:
+                unique_problems[problem_key] = {
+                    'contestId': problem_data['contest_id'],
+                    'index': problem_data['problem_index'],
+                    'name': problem_data['problem_name'],
+                    'rating': problem_data['problem_rating']
+                }
+
+    # Save the simplified list of problems
     with open(cfg.files.output_filtered, 'w') as f:
-        json.dump(filtered_results, f, indent=2)
-    
+        json.dump(list(unique_problems.values()), f, indent=2)
+
     # Print analysis summary
     print(f"\nANALYSIS COMPLETE")
     print(f"Total users analyzed: {len(user_list)}")
     print(f"Users with suspicious patterns (all): {len(all_suspicious_users)}")
-    print(f"Users with filtered suspicious patterns: {len(filtered_results)}")
+    print(f"Total unique suspicious problems found: {len(unique_problems)}")
     print(f"All results saved to: {cfg.files.output_all}")
-    print(f"Filtered results saved to: {cfg.files.output_filtered}")
-    
-    if filtered_results:
-        print(f"\nTop 10 users with most suspicious problems (filtered - last {cfg.analysis.days_to_analyze} days, rating ≤ {cfg.analysis.max_rating_threshold}):")
-        sorted_users = sorted(
-            filtered_results.items(),
-            key=lambda x: x[1]['suspicious_problems_count'],
-            reverse=True
-        )[:10]
-        
-        for username, data in sorted_users:
-            print(f"  {username}: {data['suspicious_problems_count']} suspicious problems "
-                  f"({data['total_submissions']} total submissions)")
-            
-        print(f"\nExample suspicious problems (rating ≤ {cfg.analysis.max_rating_threshold}, last {cfg.analysis.days_to_analyze} days):")
-        example_count = 0
-        for username, data in sorted_users[:3]:
-            for problem_key, problem_data in list(data['suspicious_problems'].items())[:2]:
-                rating_str = f" (rating: {problem_data['problem_rating']})" if problem_data['problem_rating'] else " (rating: unknown)"
-                print(f"  {problem_data['problem_name']}{rating_str} - "
-                      f"WA: {problem_data['wa_count']}, "
-                      f"RTE: {problem_data['rte_count']}, "
-                      f"TLE: {problem_data['tle_count']}")
-                example_count += 1
-                if example_count >= 5:
-                    break
-            if example_count >= 5:
-                break
-    else:
-        print(f"\nNo users found with suspicious problems matching the filtering criteria.")
+    print(f"Filtered problem list saved to: {cfg.files.output_filtered}")
 
 if __name__ == "__main__":
     main()

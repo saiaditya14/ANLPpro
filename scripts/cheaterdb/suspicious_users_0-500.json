@@ -1,4 +1,1300 @@
 {
+  "-0.50": {
+    "total_submissions": 2144,
+    "suspicious_problems_count": 3,
+    "suspicious_problems": {
+      "342_A": {
+        "problem_name": "Xenia and Divisors",
+        "contest_id": 342,
+        "problem_index": "A",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "1594_C": {
+        "problem_name": "Make Them Equal",
+        "contest_id": 1594,
+        "problem_index": "C",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "1742_E": {
+        "problem_name": "Scuza",
+        "contest_id": 1742,
+        "problem_index": "E",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "0r0th0rn": {
+    "total_submissions": 118,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2137_D": {
+        "problem_name": "Replace with Occurrences",
+        "contest_id": 2137,
+        "problem_index": "D",
+        "problem_rating": 1200,
+        "total_submissions": 4,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "1saadmujib": {
+    "total_submissions": 95,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "230_B": {
+        "problem_name": "T-primes",
+        "contest_id": 230,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "24bcs055": {
+    "total_submissions": 92,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "2130_A": {
+        "problem_name": "Submission is All You Need",
+        "contest_id": 2130,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 4,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "2109_A": {
+        "problem_name": "It's Time To Duel",
+        "contest_id": 2109,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 4,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "71iq": {
+    "total_submissions": 951,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2131_C": {
+        "problem_name": "Make it Equal",
+        "contest_id": 2131,
+        "problem_index": "C",
+        "problem_rating": 1100,
+        "total_submissions": 9,
+        "wa_count": 1,
+        "rte_count": 0,
+        "tle_count": 6,
+        "total_problematic": 7,
+        "accepted_count": 2,
+        "verdict_distribution": {
+          "OK": 2,
+          "TIME_LIMIT_EXCEEDED": 6,
+          "WRONG_ANSWER": 1
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "9xcuze": {
+    "total_submissions": 212,
+    "suspicious_problems_count": 4,
+    "suspicious_problems": {
+      "2131_E": {
+        "problem_name": "Adjacent XOR",
+        "contest_id": 2131,
+        "problem_index": "E",
+        "problem_rating": 1400,
+        "total_submissions": 5,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      },
+      "2127_B": {
+        "problem_name": "Hamiiid, Haaamid... Hamid?",
+        "contest_id": 2127,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 7,
+        "wa_count": 6,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 6,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 6,
+          "COMPILATION_ERROR": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2127_C": {
+        "problem_name": "Trip Shopping",
+        "contest_id": 2127,
+        "problem_index": "C",
+        "problem_rating": 1400,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "2128_B": {
+        "problem_name": "Deque Process",
+        "contest_id": 2128,
+        "problem_index": "B",
+        "problem_rating": 1100,
+        "total_submissions": 9,
+        "wa_count": 9,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 9,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 9
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "__al_amin__": {
+    "total_submissions": 2610,
+    "suspicious_problems_count": 6,
+    "suspicious_problems": {
+      "2142_C": {
+        "problem_name": "YetnotherrokenKeoard",
+        "contest_id": 2142,
+        "problem_index": "C",
+        "problem_rating": null,
+        "total_submissions": 7,
+        "wa_count": 0,
+        "rte_count": 1,
+        "tle_count": 5,
+        "total_problematic": 6,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "TIME_LIMIT_EXCEEDED": 5,
+          "COMPILATION_ERROR": 1,
+          "RUNTIME_ERROR": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2125_B": {
+        "problem_name": "Left and Down",
+        "contest_id": 2125,
+        "problem_index": "B",
+        "problem_rating": 900,
+        "total_submissions": 5,
+        "wa_count": 1,
+        "rte_count": 0,
+        "tle_count": 3,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 1,
+          "TIME_LIMIT_EXCEEDED": 3
+        },
+        "submission_period": "last_90_days"
+      },
+      "2125_A": {
+        "problem_name": "Difficult Contest",
+        "contest_id": 2125,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 5,
+        "wa_count": 2,
+        "rte_count": 2,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "RUNTIME_ERROR": 2,
+          "WRONG_ANSWER": 2
+        },
+        "submission_period": "last_90_days"
+      },
+      "2122_A": {
+        "problem_name": "Greedy Grid",
+        "contest_id": 2122,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 8,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      },
+      "2124_C": {
+        "problem_name": "Subset Multiplication",
+        "contest_id": 2124,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 11,
+        "wa_count": 10,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 10,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 10
+        },
+        "submission_period": "last_90_days"
+      },
+      "2124_A": {
+        "problem_name": "Deranged Deletions",
+        "contest_id": 2124,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "__nailong": {
+    "total_submissions": 103,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2125_A": {
+        "problem_name": "Difficult Contest",
+        "contest_id": 2125,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 8,
+        "wa_count": 5,
+        "rte_count": 3,
+        "tle_count": 0,
+        "total_problematic": 8,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 5,
+          "RUNTIME_ERROR": 3
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_anubis_": {
+    "total_submissions": 220,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "2125_B": {
+        "problem_name": "Left and Down",
+        "contest_id": 2125,
+        "problem_index": "B",
+        "problem_rating": 900,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "105122_E": {
+        "problem_name": "Last digit",
+        "contest_id": 105122,
+        "problem_index": "E",
+        "problem_rating": null,
+        "total_submissions": 15,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 8,
+        "verdict_distribution": {
+          "OK": 8,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_ashish_gupta_": {
+    "total_submissions": 447,
+    "suspicious_problems_count": 4,
+    "suspicious_problems": {
+      "2147_B": {
+        "problem_name": "Multiple Construction",
+        "contest_id": 2147,
+        "problem_index": "B",
+        "problem_rating": 1000,
+        "total_submissions": 6,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      },
+      "2127_B": {
+        "problem_name": "Hamiiid, Haaamid... Hamid?",
+        "contest_id": 2127,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 8,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      },
+      "2122_B": {
+        "problem_name": "Pile Shuffling",
+        "contest_id": 2122,
+        "problem_index": "B",
+        "problem_rating": 1100,
+        "total_submissions": 9,
+        "wa_count": 8,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 8,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 8
+        },
+        "submission_period": "last_90_days"
+      },
+      "2119_B": {
+        "problem_name": "Line Segments",
+        "contest_id": 2119,
+        "problem_index": "B",
+        "problem_rating": 1200,
+        "total_submissions": 10,
+        "wa_count": 8,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 8,
+        "accepted_count": 2,
+        "verdict_distribution": {
+          "OK": 2,
+          "WRONG_ANSWER": 8
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_binarybeast": {
+    "total_submissions": 1620,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "2131_E": {
+        "problem_name": "Adjacent XOR",
+        "contest_id": 2131,
+        "problem_index": "E",
+        "problem_rating": 1400,
+        "total_submissions": 6,
+        "wa_count": 6,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 6,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 6
+        },
+        "submission_period": "last_90_days"
+      },
+      "2127_B": {
+        "problem_name": "Hamiiid, Haaamid... Hamid?",
+        "contest_id": 2127,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 8,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_fady_": {
+    "total_submissions": 1074,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2126_E": {
+        "problem_name": "G-C-D, Unlucky!",
+        "contest_id": 2126,
+        "problem_index": "E",
+        "problem_rating": 1400,
+        "total_submissions": 7,
+        "wa_count": 6,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 6,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 6,
+          "OK": 1
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_isghufran": {
+    "total_submissions": 179,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "1858_A": {
+        "problem_name": "Buttons",
+        "contest_id": 1858,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "2127_B": {
+        "problem_name": "Hamiiid, Haaamid... Hamid?",
+        "contest_id": 2127,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 7,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_manual_": {
+    "total_submissions": 2845,
+    "suspicious_problems_count": 4,
+    "suspicious_problems": {
+      "1847_C": {
+        "problem_name": "Vampiric Powers, anyone?",
+        "contest_id": 1847,
+        "problem_index": "C",
+        "problem_rating": 1400,
+        "total_submissions": 12,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 4,
+        "verdict_distribution": {
+          "OK": 4,
+          "MEMORY_LIMIT_EXCEEDED": 4,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "1598_C": {
+        "problem_name": "Delete Two Elements",
+        "contest_id": 1598,
+        "problem_index": "C",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "2148_E": {
+        "problem_name": "Split",
+        "contest_id": 2148,
+        "problem_index": "E",
+        "problem_rating": 1200,
+        "total_submissions": 5,
+        "wa_count": 1,
+        "rte_count": 0,
+        "tle_count": 3,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 1,
+          "TIME_LIMIT_EXCEEDED": 3
+        },
+        "submission_period": "last_90_days"
+      },
+      "2124_C": {
+        "problem_name": "Subset Multiplication",
+        "contest_id": 2124,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 9,
+        "wa_count": 8,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 8,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 8
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_onlynerds": {
+    "total_submissions": 306,
+    "suspicious_problems_count": 6,
+    "suspicious_problems": {
+      "2147_B": {
+        "problem_name": "Multiple Construction",
+        "contest_id": 2147,
+        "problem_index": "B",
+        "problem_rating": 1000,
+        "total_submissions": 6,
+        "wa_count": 4,
+        "rte_count": 1,
+        "tle_count": 1,
+        "total_problematic": 6,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 4,
+          "RUNTIME_ERROR": 1,
+          "TIME_LIMIT_EXCEEDED": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "1077_C": {
+        "problem_name": "Good Array",
+        "contest_id": 1077,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 6,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      },
+      "1178_B": {
+        "problem_name": "WOW Factor",
+        "contest_id": 1178,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 3,
+        "rte_count": 0,
+        "tle_count": 1,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 3,
+          "TIME_LIMIT_EXCEEDED": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "1470_A": {
+        "problem_name": "Strange Birthday Party",
+        "contest_id": 1470,
+        "problem_index": "A",
+        "problem_rating": 1300,
+        "total_submissions": 6,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      },
+      "1676_G": {
+        "problem_name": "White-Black Balanced Subtrees",
+        "contest_id": 1676,
+        "problem_index": "G",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 0,
+        "rte_count": 0,
+        "tle_count": 4,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "TIME_LIMIT_EXCEEDED": 4,
+          "OK": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2119_C": {
+        "problem_name": "A Good Problem",
+        "contest_id": 2119,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_rudra_pratap_singh_": {
+    "total_submissions": 868,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "106084_J": {
+        "problem_name": "Gas Station",
+        "contest_id": 106084,
+        "problem_index": "J",
+        "problem_rating": null,
+        "total_submissions": 5,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_s7": {
+    "total_submissions": 1161,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2124_C": {
+        "problem_name": "Subset Multiplication",
+        "contest_id": 2124,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 3,
+        "rte_count": 0,
+        "tle_count": 2,
+        "total_problematic": 5,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 3,
+          "TIME_LIMIT_EXCEEDED": 2
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_tryagain_": {
+    "total_submissions": 543,
+    "suspicious_problems_count": 1,
+    "suspicious_problems": {
+      "2147_A": {
+        "problem_name": "Shortest Increasing Path",
+        "contest_id": 2147,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "_uday_wi_": {
+    "total_submissions": 202,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "2130_C": {
+        "problem_name": "Double Perspective",
+        "contest_id": 2130,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 5,
+        "wa_count": 1,
+        "rte_count": 0,
+        "tle_count": 3,
+        "total_problematic": 4,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "TIME_LIMIT_EXCEEDED": 3,
+          "WRONG_ANSWER": 1,
+          "COMPILATION_ERROR": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2124_B": {
+        "problem_name": "Minimise Sum",
+        "contest_id": 2124,
+        "problem_index": "B",
+        "problem_rating": 1000,
+        "total_submissions": 5,
+        "wa_count": 1,
+        "rte_count": 0,
+        "tle_count": 3,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "TIME_LIMIT_EXCEEDED": 3,
+          "WRONG_ANSWER": 1
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "a0n0k0i0t": {
+    "total_submissions": 518,
+    "suspicious_problems_count": 3,
+    "suspicious_problems": {
+      "2127_C": {
+        "problem_name": "Trip Shopping",
+        "contest_id": 2127,
+        "problem_index": "C",
+        "problem_rating": 1400,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "1805_C": {
+        "problem_name": "Place for a Selfie",
+        "contest_id": 1805,
+        "problem_index": "C",
+        "problem_rating": 1400,
+        "total_submissions": 5,
+        "wa_count": 2,
+        "rte_count": 2,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "RUNTIME_ERROR": 2,
+          "WRONG_ANSWER": 2
+        },
+        "submission_period": "last_90_days"
+      },
+      "1869_C": {
+        "problem_name": "Fill in the Matrix",
+        "contest_id": 1869,
+        "problem_index": "C",
+        "problem_rating": 1300,
+        "total_submissions": 6,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 1,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "TIME_LIMIT_EXCEEDED": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "a7med82": {
+    "total_submissions": 296,
+    "suspicious_problems_count": 3,
+    "suspicious_problems": {
+      "102961_M": {
+        "problem_name": "Playlist",
+        "contest_id": 102961,
+        "problem_index": "M",
+        "problem_rating": null,
+        "total_submissions": 7,
+        "wa_count": 6,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 6,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 6
+        },
+        "submission_period": "last_90_days"
+      },
+      "799_A": {
+        "problem_name": "Carrot Cakes",
+        "contest_id": 799,
+        "problem_index": "A",
+        "problem_rating": 1100,
+        "total_submissions": 6,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 5,
+          "OK": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "709_A": {
+        "problem_name": "Juicer",
+        "contest_id": 709,
+        "problem_index": "A",
+        "problem_rating": 900,
+        "total_submissions": 8,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "a_r_i_f": {
+    "total_submissions": 715,
+    "suspicious_problems_count": 4,
+    "suspicious_problems": {
+      "2129_A": {
+        "problem_name": "Double Perspective",
+        "contest_id": 2129,
+        "problem_index": "A",
+        "problem_rating": 1300,
+        "total_submissions": 7,
+        "wa_count": 3,
+        "rte_count": 1,
+        "tle_count": 2,
+        "total_problematic": 6,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "RUNTIME_ERROR": 1,
+          "OK": 1,
+          "WRONG_ANSWER": 3,
+          "TIME_LIMIT_EXCEEDED": 2
+        },
+        "submission_period": "last_90_days"
+      },
+      "1613_A": {
+        "problem_name": "Long Comparison",
+        "contest_id": 1613,
+        "problem_index": "A",
+        "problem_rating": 900,
+        "total_submissions": 6,
+        "wa_count": 3,
+        "rte_count": 1,
+        "tle_count": 1,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 3,
+          "TIME_LIMIT_EXCEEDED": 1,
+          "RUNTIME_ERROR": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "1846_E1": {
+        "problem_name": "Rudolf and Snowflakes (simple version)",
+        "contest_id": 1846,
+        "problem_index": "E1",
+        "problem_rating": 1300,
+        "total_submissions": 4,
+        "wa_count": 3,
+        "rte_count": 0,
+        "tle_count": 1,
+        "total_problematic": 4,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 3,
+          "TIME_LIMIT_EXCEEDED": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2116_B": {
+        "problem_name": "Gellyfish and Baby's Breath",
+        "contest_id": 2116,
+        "problem_index": "B",
+        "problem_rating": 1300,
+        "total_submissions": 9,
+        "wa_count": 9,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 9,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 9
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "aaazzzzzz002": {
+    "total_submissions": 41,
+    "suspicious_problems_count": 2,
+    "suspicious_problems": {
+      "2128_C": {
+        "problem_name": "Leftmost Below",
+        "contest_id": 2128,
+        "problem_index": "C",
+        "problem_rating": 1200,
+        "total_submissions": 9,
+        "wa_count": 9,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 9,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 9
+        },
+        "submission_period": "last_90_days"
+      },
+      "2128_B": {
+        "problem_name": "Deque Process",
+        "contest_id": 2128,
+        "problem_index": "B",
+        "problem_rating": 1100,
+        "total_submissions": 9,
+        "wa_count": 9,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 9,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 9
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "aaditya_raj_iitr": {
+    "total_submissions": 440,
+    "suspicious_problems_count": 3,
+    "suspicious_problems": {
+      "1692_G": {
+        "problem_name": "2^Sort",
+        "contest_id": 1692,
+        "problem_index": "G",
+        "problem_rating": 1400,
+        "total_submissions": 8,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 3,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4,
+          "TIME_LIMIT_EXCEEDED": 3
+        },
+        "submission_period": "last_90_days"
+      },
+      "2136_B": {
+        "problem_name": "Like the Bitset",
+        "contest_id": 2136,
+        "problem_index": "B",
+        "problem_rating": 900,
+        "total_submissions": 5,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 4,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 4
+        },
+        "submission_period": "last_90_days"
+      },
+      "1761_A": {
+        "problem_name": "Two Permutations",
+        "contest_id": 1761,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 6,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
+  "aaraj": {
+    "total_submissions": 278,
+    "suspicious_problems_count": 7,
+    "suspicious_problems": {
+      "2148_D": {
+        "problem_name": "Destruction of the Dandelion Fields",
+        "contest_id": 2148,
+        "problem_index": "D",
+        "problem_rating": 1000,
+        "total_submissions": 7,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      },
+      "2139_C": {
+        "problem_name": "Cake Assignment",
+        "contest_id": 2139,
+        "problem_index": "C",
+        "problem_rating": 1100,
+        "total_submissions": 8,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 1,
+        "total_problematic": 5,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "MEMORY_LIMIT_EXCEEDED": 2,
+          "TIME_LIMIT_EXCEEDED": 1,
+          "WRONG_ANSWER": 4,
+          "COMPILATION_ERROR": 1
+        },
+        "submission_period": "last_90_days"
+      },
+      "2137_C": {
+        "problem_name": "Maximum Even Sum",
+        "contest_id": 2137,
+        "problem_index": "C",
+        "problem_rating": 1100,
+        "total_submissions": 8,
+        "wa_count": 4,
+        "rte_count": 0,
+        "tle_count": 2,
+        "total_problematic": 6,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "TIME_LIMIT_EXCEEDED": 2,
+          "WRONG_ANSWER": 4,
+          "COMPILATION_ERROR": 2
+        },
+        "submission_period": "last_90_days"
+      },
+      "2134_A": {
+        "problem_name": "Painting With Two Colors",
+        "contest_id": 2134,
+        "problem_index": "A",
+        "problem_rating": 800,
+        "total_submissions": 18,
+        "wa_count": 18,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 18,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 18
+        },
+        "submission_period": "last_90_days"
+      },
+      "2132_C1": {
+        "problem_name": "The Cunning Seller (easy version)",
+        "contest_id": 2132,
+        "problem_index": "C1",
+        "problem_rating": 1000,
+        "total_submissions": 8,
+        "wa_count": 7,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 7,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 7
+        },
+        "submission_period": "last_90_days"
+      },
+      "2132_C2": {
+        "problem_name": "The Cunning Seller (hard version)",
+        "contest_id": 2132,
+        "problem_index": "C2",
+        "problem_rating": 1400,
+        "total_submissions": 5,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 0,
+        "verdict_distribution": {
+          "WRONG_ANSWER": 5
+        },
+        "submission_period": "last_90_days"
+      },
+      "2132_B": {
+        "problem_name": "The Secret Number",
+        "contest_id": 2132,
+        "problem_index": "B",
+        "problem_rating": 900,
+        "total_submissions": 8,
+        "wa_count": 5,
+        "rte_count": 0,
+        "tle_count": 0,
+        "total_problematic": 5,
+        "accepted_count": 1,
+        "verdict_distribution": {
+          "OK": 1,
+          "WRONG_ANSWER": 5,
+          "COMPILATION_ERROR": 2
+        },
+        "submission_period": "last_90_days"
+      }
+    }
+  },
   "aayushanand737": {
     "total_submissions": 1532,
     "suspicious_problems_count": 4,
@@ -71,8 +1367,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aayushdalal": {
     "total_submissions": 528,
@@ -202,8 +1497,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abdalrasoul": {
     "total_submissions": 152,
@@ -227,8 +1521,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abdullah500": {
     "total_submissions": 5021,
@@ -341,8 +1634,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abhay_zz10": {
     "total_submissions": 253,
@@ -364,8 +1656,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abhinav_2004": {
     "total_submissions": 814,
@@ -390,8 +1681,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abhishek_dtu": {
     "total_submissions": 55,
@@ -414,8 +1704,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abirpal12": {
     "total_submissions": 495,
@@ -440,8 +1729,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aboalkasim": {
     "total_submissions": 2328,
@@ -497,8 +1785,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "abu3mr109": {
     "total_submissions": 287,
@@ -777,8 +2064,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "adel_mahmoud": {
     "total_submissions": 2346,
@@ -801,8 +2087,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "adilzhanb": {
     "total_submissions": 885,
@@ -860,8 +2145,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "adit_shriyans": {
     "total_submissions": 1112,
@@ -884,8 +2168,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aditdx": {
     "total_submissions": 189,
@@ -941,8 +2224,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aditya024": {
     "total_submissions": 616,
@@ -966,8 +2248,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aditya1801cp": {
     "total_submissions": 82,
@@ -1010,8 +2291,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "adityakute0087": {
     "total_submissions": 198,
@@ -1034,8 +2314,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "advait_cf": {
     "total_submissions": 210,
@@ -1059,8 +2338,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "affanadeeb2005": {
     "total_submissions": 264,
@@ -1114,8 +2392,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "afif001original": {
     "total_submissions": 363,
@@ -1226,8 +2503,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "agarwal_sh": {
     "total_submissions": 631,
@@ -1429,8 +2705,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "agm17": {
     "total_submissions": 333,
@@ -1488,8 +2763,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ahad": {
     "total_submissions": 5023,
@@ -1710,8 +2984,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ahnaf_islam_2009": {
     "total_submissions": 672,
@@ -1784,8 +3057,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aif_is_carving": {
     "total_submissions": 3084,
@@ -1808,8 +3080,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ak_16": {
     "total_submissions": 632,
@@ -1832,8 +3103,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ak_ejoi_2025": {
     "total_submissions": 36,
@@ -1857,8 +3127,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ak_m7uslim": {
     "total_submissions": 2555,
@@ -2124,8 +3393,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akash_184": {
     "total_submissions": 188,
@@ -2149,8 +3417,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akhmadzhanov": {
     "total_submissions": 2381,
@@ -2207,8 +3474,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akschain284": {
     "total_submissions": 78,
@@ -2231,8 +3497,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aksh_at_1230": {
     "total_submissions": 157,
@@ -2254,8 +3519,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akshat.shrivastava": {
     "total_submissions": 238,
@@ -2278,8 +3542,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akshat_baranwal": {
     "total_submissions": 98,
@@ -2304,8 +3567,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akshat_lakhera": {
     "total_submissions": 92,
@@ -2328,8 +3590,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "akshnotfound": {
     "total_submissions": 279,
@@ -2351,8 +3612,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "al95ireyiz": {
     "total_submissions": 3616,
@@ -2511,8 +3771,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alaaafif": {
     "total_submissions": 248,
@@ -2553,8 +3812,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alamsaibharath2005": {
     "total_submissions": 821,
@@ -2577,8 +3835,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "algo_pilot": {
     "total_submissions": 37,
@@ -2601,8 +3858,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "algoace2107": {
     "total_submissions": 149,
@@ -2625,8 +3881,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "algowiz826004": {
     "total_submissions": 422,
@@ -2648,8 +3903,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ali_bbn": {
     "total_submissions": 2025,
@@ -2673,8 +3927,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alimfarhat2004": {
     "total_submissions": 748,
@@ -2823,8 +4076,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alkomait": {
     "total_submissions": 540,
@@ -2848,8 +4100,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alok_07": {
     "total_submissions": 171,
@@ -2871,8 +4122,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alpha00007": {
     "total_submissions": 288,
@@ -2896,8 +4146,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alpha25": {
     "total_submissions": 428,
@@ -3061,8 +4310,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alphawasd": {
     "total_submissions": 191,
@@ -3085,8 +4333,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alsharis": {
     "total_submissions": 893,
@@ -3109,8 +4356,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alter.ego": {
     "total_submissions": 145,
@@ -3253,8 +4499,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "alyssonvictor": {
     "total_submissions": 779,
@@ -3620,8 +4865,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "amarpro": {
     "total_submissions": 52,
@@ -3660,8 +4904,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "amiralirafiei": {
     "total_submissions": 324,
@@ -3735,8 +4978,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "amirhanordobaev": {
     "total_submissions": 372,
@@ -3760,8 +5002,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "amirshaban": {
     "total_submissions": 268,
@@ -3784,8 +5025,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anand_0580": {
     "total_submissions": 123,
@@ -3808,8 +5048,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ancientmoth": {
     "total_submissions": 29,
@@ -3831,8 +5070,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aniket_deore": {
     "total_submissions": 869,
@@ -3854,8 +5092,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anirbans_en": {
     "total_submissions": 376,
@@ -3878,8 +5115,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankit.kumar.24031": {
     "total_submissions": 670,
@@ -3988,8 +5224,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankit37saha": {
     "total_submissions": 1013,
@@ -4097,8 +5332,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankit_0211": {
     "total_submissions": 72,
@@ -4120,8 +5354,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankit_singh_sisodya": {
     "total_submissions": 5531,
@@ -4162,8 +5395,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankityadav05": {
     "total_submissions": 1260,
@@ -4187,8 +5419,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ankush_26": {
     "total_submissions": 136,
@@ -4210,8 +5441,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anmol.04": {
     "total_submissions": 175,
@@ -4234,8 +5464,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anonized": {
     "total_submissions": 301,
@@ -4275,8 +5504,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anonymous_member": {
     "total_submissions": 37,
@@ -4299,8 +5527,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ansh_gupta_iiitb": {
     "total_submissions": 2579,
@@ -4323,8 +5550,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ansh_k": {
     "total_submissions": 91,
@@ -4348,8 +5574,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anshuman_15": {
     "total_submissions": 687,
@@ -4411,8 +5636,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anupamanand0209": {
     "total_submissions": 273,
@@ -4435,8 +5659,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "anurag_shukla_": {
     "total_submissions": 1876,
@@ -4510,8 +5733,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "apoorv.samota": {
     "total_submissions": 1220,
@@ -4535,8 +5757,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "apurbakumarshow": {
     "total_submissions": 597,
@@ -4576,8 +5797,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aragorn_09": {
     "total_submissions": 180,
@@ -4601,8 +5821,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "archit.jain": {
     "total_submissions": 370,
@@ -4626,8 +5845,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arihantjain04": {
     "total_submissions": 613,
@@ -4650,8 +5868,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arjit63": {
     "total_submissions": 127,
@@ -4692,8 +5909,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arjunaik": {
     "total_submissions": 94,
@@ -4751,8 +5967,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arnav1209": {
     "total_submissions": 99,
@@ -4775,8 +5990,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arnav_oruganty": {
     "total_submissions": 170,
@@ -4799,8 +6013,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arnav_raghuvanshi": {
     "total_submissions": 52,
@@ -4823,8 +6036,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arpit_2301": {
     "total_submissions": 1620,
@@ -4866,8 +6078,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arrab": {
     "total_submissions": 1371,
@@ -5098,8 +6309,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arsdr": {
     "total_submissions": 1449,
@@ -5123,8 +6333,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arvindk0025": {
     "total_submissions": 935,
@@ -5146,8 +6355,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "arvink_cf": {
     "total_submissions": 434,
@@ -5171,8 +6379,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aryaman2704": {
     "total_submissions": 472,
@@ -5232,8 +6439,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "asemogg": {
     "total_submissions": 1208,
@@ -5342,8 +6548,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ash_21_25": {
     "total_submissions": 1023,
@@ -5454,8 +6659,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashank_22": {
     "total_submissions": 1114,
@@ -5478,8 +6682,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashish_kumar15": {
     "total_submissions": 291,
@@ -5501,8 +6704,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashu_1491981": {
     "total_submissions": 2970,
@@ -5525,8 +6727,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashutosh_1030": {
     "total_submissions": 94,
@@ -5566,8 +6767,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashutoshrabia": {
     "total_submissions": 424,
@@ -5621,8 +6821,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ashwani.pandey93048": {
     "total_submissions": 1016,
@@ -5872,8 +7071,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "asp1k": {
     "total_submissions": 836,
@@ -5950,8 +7148,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "aspandagyjuldyz": {
     "total_submissions": 103,
@@ -5974,8 +7171,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "atharva3185codes": {
     "total_submissions": 642,
@@ -6015,8 +7211,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "avdvh": {
     "total_submissions": 149,
@@ -6039,8 +7234,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "avi_coder": {
     "total_submissions": 466,
@@ -6063,8 +7257,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "awnish_kumar": {
     "total_submissions": 912,
@@ -6105,8 +7298,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayana_kumar09": {
     "total_submissions": 56,
@@ -6130,8 +7322,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayush687141": {
     "total_submissions": 248,
@@ -6154,8 +7345,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayush_5267": {
     "total_submissions": 2476,
@@ -6178,8 +7368,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayushaks999": {
     "total_submissions": 94,
@@ -6219,8 +7408,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayushgupta_234": {
     "total_submissions": 503,
@@ -6277,8 +7465,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ayushkatiyar331": {
     "total_submissions": 155,
@@ -6337,8 +7524,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "azadsinghdinkar_965": {
     "total_submissions": 635,
@@ -6397,8 +7583,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "azeturk810": {
     "total_submissions": 1777,
@@ -6576,8 +7761,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "ba4aaa_albld": {
     "total_submissions": 521,
@@ -6600,8 +7784,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "baarishboy": {
     "total_submissions": 2044,
@@ -6625,8 +7808,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "baghelyash004": {
     "total_submissions": 315,
@@ -6788,8 +7970,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bakhtiyarn": {
     "total_submissions": 4007,
@@ -6913,8 +8094,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "balakrishnan": {
     "total_submissions": 7836,
@@ -6936,8 +8116,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "balaudaya3": {
     "total_submissions": 515,
@@ -6976,8 +8155,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "barikpriyam28": {
     "total_submissions": 111,
@@ -7000,8 +8178,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bashar._.kamel": {
     "total_submissions": 2153,
@@ -7194,8 +8371,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "basheer1888": {
     "total_submissions": 50,
@@ -7235,8 +8411,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "batsman": {
     "total_submissions": 1131,
@@ -7259,8 +8434,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bbahubali.strength": {
     "total_submissions": 293,
@@ -7283,8 +8457,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "belgutei_b": {
     "total_submissions": 130,
@@ -7379,8 +8552,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bephuongsupersiuwi": {
     "total_submissions": 645,
@@ -7405,8 +8577,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bhadwe_bhature": {
     "total_submissions": 250,
@@ -7429,8 +8600,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bharat_08": {
     "total_submissions": 658,
@@ -7454,8 +8624,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bhumi_20": {
     "total_submissions": 267,
@@ -7568,8 +8737,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bibek_sah": {
     "total_submissions": 38,
@@ -7591,8 +8759,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bikashkumarkundu99": {
     "total_submissions": 153,
@@ -7633,8 +8800,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "birajitsaikia": {
     "total_submissions": 257,
@@ -7706,8 +8872,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "biryani70": {
     "total_submissions": 1728,
@@ -7729,8 +8894,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "blackrabbit-zmk": {
     "total_submissions": 738,
@@ -7790,8 +8954,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "blaknoto": {
     "total_submissions": 555,
@@ -7955,8 +9118,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bmttrum": {
     "total_submissions": 119,
@@ -7978,8 +9140,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "boderline": {
     "total_submissions": 256,
@@ -8003,8 +9164,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bommireddy3132": {
     "total_submissions": 61,
@@ -8027,8 +9187,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "booeythedeltoidroaster": {
     "total_submissions": 166,
@@ -8068,8 +9227,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bookcat": {
     "total_submissions": 1285,
@@ -8129,8 +9287,7 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   },
   "bricked_": {
     "total_submissions": 1300,
@@ -8153,7 +9310,6 @@
         },
         "submission_period": "last_90_days"
       }
-    },
-    "filter_criteria": "last_90_days_rating_1400_or_lower"
+    }
   }
 }
