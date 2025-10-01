@@ -1,0 +1,150 @@
+Yes, the image provided shows the full problem statement and all necessary details to solve the problem.
+
+### Problem Analysis
+
+Here's a breakdown of the problem:
+
+**Game:** A two-player game between Alice and Bob on a binary string `s`. Alice goes first.
+
+**Alice's Goal:** To make the entire string consist of zeros. She wins if she achieves this state.
+
+**Bob's Goal:** To prevent Alice from winning. If Alice cannot win in a finite number of moves, Bob wins.
+
+**Moves:**
+*   **Alice:** Chooses any **subsequence** of length `k` and sets all its characters to `0`. A subsequence does not need to be contiguous.
+*   **Bob:** Chooses any **substring** of length `k` and sets all its characters to `1`. A substring must be contiguous.
+
+**Optimal Play:** Both players play optimally to achieve their goals.
+
+### Constraints
+*   Number of test cases `t`: `1 <= t <= 10^4`
+*   String length `n`: `2 <= n <= 2 * 10^5`
+*   Integer `k`: `1 <= k < n`
+*   The sum of `n` over all test cases does not exceed `2 * 10^5`.
+
+### Input/Output Format
+*   **Input:**
+    1.  An integer `t`, the number of test cases.
+    2.  For each test case:
+        *   Two integers, `n` and `k`.
+        *   A binary string `s` of length `n`.
+*   **Output:**
+    *   For each test case, print "Alice" if Alice wins, or "Bob" if Bob wins. The output is case-insensitive.
+
+### Examples
+The provided screenshot shows the following inputs:
+1.  `n=5, k=2`, `s="11011"`
+2.  `n=7, k=4`, `s="1011011"`
+3.  `n=6, k=1`, `s="010000"`
+4.  `n=4, k=1`, `s="1111"`
+5.  `n=8, k=3`, (string not fully visible, but likely all '1's for a strong test case)
+
+### Solution Approach
+
+This is a game theory problem. Let's analyze the players' optimal strategies.
+
+Let `C` be the number of '1's in the string.
+
+**Alice's Power:** Alice's move is very powerful because she can target any `k` characters, regardless of their position. If there are at least `k` ones, she can turn `k` of them to zeros. If there are `C <= k` ones, she can choose all `C` ones (and `k-C` zeros) and turn them to zero in a single move, winning the game immediately.
+
+**Bob's Power:** Bob's move is more restricted. He can only affect a contiguous block of `k` characters. His best move is to create as many new '1's as possible. This means he will choose a substring of length `k` that contains the maximum number of '0's and turn it into all '1's.
+
+**Winning Scenarios:**
+
+1.  **Alice's Immediate Win:** If the initial number of ones `C` is less than or equal to `k`, Alice can eliminate all of them in her first turn. **Alice wins**.
+
+2.  **The `k=1` Case:** This is a special case.
+    *   Alice's move: Change one '1' to a '0'.
+    *   Bob's move: Change one character to a '1'.
+    *   If `C > 1`, Alice changes a '1' to a '0'. The count of '1's becomes `C-1`. If there were any '0's in the string initially, or even if Alice's move created the only '0', Bob can simply change a '0' back to a '1'. He can always restore the count of '1's to `C` (or `C-1` back to `C-1` if he picks the `0` Alice just made). Alice makes no progress towards reducing the total count of '1's to zero. Thus, if `k=1` and `C>1`, **Bob wins**.
+
+3.  **General Case (`C > k` and `k > 1`):** This is a battle of attrition. Alice removes `k` ones per turn. Bob tries to add them back.
+    *   Let's analyze the game in terms of turns. Alice needs `m = ceil(C/k)` turns to remove all initial `1`s if Bob does nothing. In this period, Bob gets `m-1` turns to play.
+    *   Alice's optimal strategy is not just to reduce the count of '1's, but also to limit Bob's ability to create new '1's. She can do this by ensuring that after her move, there is no substring of `k` zeros. If she can do this, Bob's best move will create at most `k-1` new '1's.
+    *   Let's assume Alice can always play optimally to prevent Bob from creating `k` ones in a single turn (this is a reasonable assumption for `k>1` unless `C` is very large).
+    *   In `m` turns, Alice removes `m * k` ones.
+    *   In his `m-1` turns, Bob adds at most `(m-1) * (k-1)` ones.
+    *   Alice wins if the total number of ones she can remove is greater than or equal to the initial ones plus all the ones Bob can add.
+        `m * k >= C + (m-1) * (k-1)`
+        `m*k >= C + m*k - m - k + 1`
+        `0 >= C - m - k + 1`
+        `m + k - 1 >= C`
+    *   Substituting `m = ceil(C/k)`:
+        `ceil(C/k) + k - 1 >= C`
+    *   If this inequality holds, **Alice wins**. Otherwise, **Bob wins**. This inequality effectively captures whether Alice has enough "operational freedom" to remove `1`s faster than Bob can replenish them under optimal play.
+
+**Summary of Algorithm:**
+1.  Count the number of '1's, `C`, in the string `s`.
+2.  If `C == 0`, Alice has already won.
+3.  If `C <= k`, Alice wins on her first turn.
+4.  If `k == 1` (and `C > 1` from the previous step), Bob wins.
+5.  If `k > 1` (and `C > k`), calculate `m = ceil(C/k)`. This can be computed using integer division as `m = (C + k - 1) / k`.
+6.  Check if `m + k - 1 >= C`. If it is, Alice wins. Otherwise, Bob wins.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <string>
+#include <numeric>
+#include <cmath>
+#include <algorithm>
+
+void solve() {
+    int n;
+    long long k;
+    std::cin >> n >> k;
+    std::string s;
+    std::cin >> s;
+
+    long long ones_count = 0;
+    for (char c : s) {
+        if (c == '1') {
+            ones_count++;
+        }
+    }
+
+    if (ones_count == 0) {
+        std::cout << "Alice" << std::endl;
+        return;
+    }
+
+    if (ones_count <= k) {
+        std::cout << "Alice" << std::endl;
+        return;
+    }
+
+    if (k == 1) {
+        // With k=1, if there's more than one '1', Bob can always
+        // counter Alice's move. Alice removes one '1', Bob adds one back.
+        // Alice can't make progress.
+        std::cout << "Bob" << std::endl;
+        return;
+    }
+
+    // For k > 1 and ones_count > k:
+    // Alice needs m = ceil(ones_count / k) moves.
+    // Bob gets m-1 moves.
+    // Alice wins if she can remove ones faster than Bob can add them.
+    // Assuming Alice can prevent Bob from making a full +k move,
+    // Alice wins if m*k >= C + (m-1)*(k-1)
+    // which simplifies to m + k - 1 >= C
+    long long m = (ones_count + k - 1) / k; // Equivalent to ceil(ones_count / k)
+    if (m + k - 1 >= ones_count) {
+        std::cout << "Alice" << std::endl;
+    } else {
+        std::cout << "Bob" << std::endl;
+    }
+}
+
+int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    int t;
+    std::cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
+```

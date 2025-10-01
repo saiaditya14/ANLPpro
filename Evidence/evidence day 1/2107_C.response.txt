@@ -1,0 +1,198 @@
+An analysis of the problem statement is as follows:
+
+### Image Analysis
+The provided screenshot contains the full and complete problem statement for "C. Maximum Subarray Sum" from Codeforces Round 1023 (Div. 2). All necessary details, including the problem description, constraints on input variables, input/output format, and examples, are present and clearly legible.
+
+### Problem Breakdown
+
+**Task:** You are given an array `a` of length `n` and a target maximum subarray sum `k`. Some elements of the array are fixed, while others are "free" and can be assigned any integer value. Your goal is to assign values to the free elements such that the maximum subarray sum of the final array is exactly `k`. If a solution exists, you should output "Yes" and one such array; otherwise, output "No".
+
+**Input:**
+- `t`: Number of test cases.
+- For each test case:
+    - `n`: The length of the array `a`.
+    - `k`: The target positive maximum subarray sum.
+    - `s`: A binary string of length `n`. `s[i] = '1'` means `a[i]` is fixed, `s[i] = '0'` means `a[i]` is free.
+    - `a`: An array of `n` integers. If `s[i] = '1'`, `a[i]` is the fixed value. If `s[i] = '0'`, `a[i]` is initially 0 but can be changed.
+
+**Output:**
+- For each test case:
+    - "Yes" or "No".
+    - If "Yes", the next line contains `n` space-separated integers representing the constructed array.
+
+**Constraints:**
+- `1 ≤ t ≤ 10^4`
+- `1 ≤ n ≤ 2 * 10^5`
+- `1 ≤ k ≤ 10^{12}`
+- Sum of `n` over all test cases does not exceed `2 * 10^5`.
+- For fixed `a_i`, `|a_i| ≤ 10^6`.
+- For free elements, you can use values up to `|a_i| ≤ 10^{18}`.
+
+### Solution Approach
+
+The problem asks us to construct an array. The key idea is that we have a lot of freedom with the free elements. A contiguous block of free elements can be manipulated to create a subarray with a specific maximum sum.
+
+Let's analyze the structure of the array. It's composed of segments of fixed values separated by blocks of free values.
+
+The core strategy is to pick one block of free elements and use it to "engineer" the maximum subarray sum to be exactly `k`. We'll set the values in this chosen block strategically, and keep all other free blocks filled with zeros. For this to work, we must ensure that no subarray outside our engineered segment, or on its periphery, has a sum greater than `k`.
+
+Here's a step-by-step approach:
+
+1.  **Handle the edge case:** If there are no free elements (`s` contains only '1's), the array is completely fixed. We simply calculate its maximum subarray sum. If it equals `k`, the answer is "Yes" and we print the given array. Otherwise, it's "No".
+
+2.  **Precomputation:** For the general case with free elements, we first work with the initial array where all free elements are set to 0. We'll precompute four auxiliary arrays in `O(n)` time:
+    - `max_sum_ending_at[i]`: The maximum sum of a subarray ending at index `i`.
+    - `max_sum_starting_at[i]`: The maximum sum of a subarray starting at index `i`.
+    - `max_sum_in_prefix[i]`: The maximum sum of any subarray within the prefix `a[0...i]`.
+    - `max_sum_in_suffix[i]`: The maximum sum of any subarray within the suffix `a[i...n-1]`.
+    These can all be calculated efficiently using variations of Kadane's algorithm.
+
+3.  **Iterate through free blocks:** We identify all maximal contiguous blocks of free elements. For each block, spanning indices `p` to `q`, we test if it can be used to construct a solution.
+
+4.  **Test a free block `[p, q]`:**
+    a. The maximum subarray that we will form will potentially include parts of the array to the left of `p` and to the right of `q`. The largest possible positive contribution from the left is the maximum non-negative subarray sum ending at `p-1`. This is `L_sum = max(0, max_sum_ending_at[p-1])`. Similarly, from the right, it's `R_sum = max(0, max_sum_starting_at[q+1])`.
+    b. To achieve a total sum of `k`, the subarray within the block `[p, q]` must have a maximum sum of `V = k - L_sum - R_sum`.
+    c. A crucial condition is that no other subarray in the parts of the array outside this "engineered" zone can have a sum greater than `k`. The maximum subarray sum in `a[0...p-1]` is `max_sum_in_prefix[p-1]`, and in `a[q+1...n-1]` is `max_sum_in_suffix[q+1]`. If either of these is greater than `k`, this block cannot be used to form a valid solution.
+    d. If `max_sum_in_prefix[p-1] ≤ k` and `max_sum_in_suffix[q+1] ≤ k`, we can form a solution. We need to fill the block `a[p...q]` to have a maximum subarray sum of exactly `V`. This is always possible:
+        - If `V ≥ 0`, we can set `a[p] = V` and the rest of the block (`a[p+1...q]`) to 0. The max subarray sum of this block will be `V`.
+        - If `V < 0`, to ensure the max subarray sum is `V`, we can set all elements in the block `a[p...q]` to `V`. Any subarray within this block will have a sum `c*V` for some `c≥1`, which is less than or equal to `V`.
+
+5.  **Output:** If we find any free block that satisfies the conditions, we construct the corresponding array, print "Yes" and the array, and we are done for that test case. If we iterate through all free blocks and none satisfy the conditions, no solution exists, and we print "No".
+
+This approach is efficient. The precomputation takes `O(n)` time. Then, we iterate through the blocks once, which is also `O(n)`. The total time complexity per test case is `O(n)`, which is well within the limits given the sum of `n` constraint.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+#include <numeric>
+#include <algorithm>
+
+using namespace std;
+
+const long long INF = 4e18; // A value larger than any possible sum
+
+void solve() {
+    int n;
+    long long k;
+    cin >> n >> k;
+    string s;
+    cin >> s;
+    vector<long long> a(n);
+    int free_count = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+        if (s[i] == '0') {
+            free_count++;
+        }
+    }
+
+    if (n == 0) {
+        cout << "No\n";
+        return;
+    }
+
+    // Precomputation
+    // max_sum_ending_at[i]
+    vector<long long> max_sum_ending_at(n);
+    max_sum_ending_at[0] = a[0];
+    for (int i = 1; i < n; ++i) {
+        max_sum_ending_at[i] = max(a[i], a[i] + max_sum_ending_at[i - 1]);
+    }
+
+    // max_sum_starting_at[i]
+    vector<long long> max_sum_starting_at(n);
+    max_sum_starting_at[n-1] = a[n-1];
+    for (int i = n - 2; i >= 0; --i) {
+        max_sum_starting_at[i] = max(a[i], a[i] + max_sum_starting_at[i + 1]);
+    }
+
+    // max_sum_in_prefix[i] = max subarray sum in a[0...i]
+    vector<long long> max_sum_in_prefix(n);
+    max_sum_in_prefix[0] = max_sum_ending_at[0];
+    for (int i = 1; i < n; ++i) {
+        max_sum_in_prefix[i] = max(max_sum_in_prefix[i-1], max_sum_ending_at[i]);
+    }
+
+    // max_sum_in_suffix[i] = max subarray sum in a[i...n-1]
+    vector<long long> max_sum_in_suffix(n);
+    max_sum_in_suffix[n-1] = max_sum_starting_at[n-1];
+    for (int i = n - 2; i >= 0; --i) {
+        max_sum_in_suffix[i] = max(max_sum_in_suffix[i+1], max_sum_starting_at[i]);
+    }
+
+
+    if (free_count == 0) {
+        if (max_sum_in_prefix[n-1] == k) {
+            cout << "Yes" << endl;
+            for (int i = 0; i < n; ++i) {
+                cout << a[i] << (i == n - 1 ? "" : " ");
+            }
+            cout << endl;
+        } else {
+            cout << "No" << endl;
+        }
+        return;
+    }
+
+    int p = 0;
+    while (p < n) {
+        if (s[p] == '1') {
+            p++;
+            continue;
+        }
+        int q = p;
+        while (q + 1 < n && s[q + 1] == '0') {
+            q++;
+        }
+
+        long long l_sum = (p > 0) ? max(0LL, max_sum_ending_at[p - 1]) : 0;
+        long long r_sum = (q < n - 1) ? max(0LL, max_sum_starting_at[q + 1]) : 0;
+        
+        long long max_l = (p > 0) ? max_sum_in_prefix[p - 1] : -INF;
+        long long max_r = (q < n - 1) ? max_sum_in_suffix[q + 1] : -INF;
+
+        if (max_l <= k && max_r <= k) {
+            long long v = k - l_sum - r_sum;
+            
+            vector<long long> res_a = a;
+            int len = q - p + 1;
+            
+            if (len == 1) {
+                res_a[p] = v;
+            } else {
+                if (v >= 0) {
+                    res_a[p] = v;
+                    for (int i = p + 1; i <= q; ++i) res_a[i] = 0;
+                } else { // v < 0
+                    for (int i = p; i <= q; ++i) res_a[i] = v;
+                }
+            }
+            
+            cout << "Yes" << endl;
+            for (int i = 0; i < n; ++i) {
+                cout << res_a[i] << (i == n - 1 ? "" : " ");
+            }
+            cout << endl;
+            return;
+        }
+
+        p = q + 1;
+    }
+
+    cout << "No" << endl;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
+```

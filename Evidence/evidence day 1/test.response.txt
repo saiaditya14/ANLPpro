@@ -1,0 +1,130 @@
+Of course. Here is the analysis of the problem and the C++ solution.
+
+Yes, the provided image shows the full problem statement and all necessary details to solve it.
+
+### Problem Analysis
+
+**1. Problem Statement**
+
+Given an array `a` of `n` elements, where each element is either -1, 0, or 1. You can perform an operation: choose an index `i` and replace `a_i` with `a_i + 1`. The goal is to make the product of all elements in the array strictly positive (`> 0`) using the minimum possible number of operations. It is guaranteed that a solution is always possible.
+
+**2. Constraints**
+
+*   Number of test cases, `t`: `1 <= t <= 10^4`
+*   Length of the array, `n`: `1 <= n <= 8`
+*   Value of array elements, `a_i`: `a_i` can be -1, 0, or 1.
+
+**3. Input/Output Format**
+
+*   **Input:**
+    *   The first line contains an integer `t`, the number of test cases.
+    *   For each test case:
+        *   The first line contains an integer `n`, the size of the array.
+        *   The second line contains `n` space-separated integers, the elements of the array.
+*   **Output:**
+    *   For each test case, print a single integer representing the minimum number of operations required.
+
+**4. Examples**
+
+*   **Input:**
+    ```
+    3
+    3
+    -1 0 1
+    4
+    -1 -1 0 1
+    5
+    -1 -1 -1 0 0
+    ```
+*   **Output:**
+    ```
+    3
+    1
+    4
+    ```
+
+### Solution Approach
+
+The goal is to make the product of all elements strictly positive. This implies two conditions must be met:
+1.  **No Zeros:** The array must not contain any zeros, as any zero will make the product zero.
+2.  **Even Number of Negatives:** The number of negative elements in the array must be even. An odd number of negative elements would result in a negative product.
+
+We want to satisfy these two conditions with the minimum number of operations. The only available operation is `a_i := a_i + 1`. Let's see how this affects each possible initial value:
+*   `0 -> 1` (costs 1 operation)
+*   `-1 -> 0 -> 1` (costs 2 operations to make it positive)
+*   `1 -> 2` (costs 1 operation, it remains positive)
+
+We can solve this by addressing the two conditions separately and adding the costs:
+
+**Step 1: Handle Zeros**
+Any element that is `0` must be changed. The cheapest way to make a `0` non-zero is to apply the operation once, turning it into a `1`. If there are `c_0` zeros in the array, we must perform at least `c_0` operations. After this, all original zeros are now `1`s.
+
+**Step 2: Handle Negatives**
+After handling the zeros, the array effectively consists of its original `1`s and `-1`s, plus new `1`s that were originally `0`s. The sign of the product is now determined solely by the number of `-1`s. Let `c_{-1}` be the count of `-1`s.
+*   If `c_{-1}` is even, the product `(-1)^{c_{-1}}` is `+1`. The product of the entire array is positive, so we don't need any more operations.
+*   If `c_{-1}` is odd, the product is `-1`. To make it positive, we must change the sign. The cheapest way to do this is to eliminate one of the `-1`s by turning it into a positive number. The minimum operations to turn a `-1` into a positive number is two: `-1 -> 0 -> 1`. This reduces the count of negative numbers by one, making the new count even. This step adds 2 operations to our total.
+
+**Final Algorithm:**
+1.  Count the number of zeros (`c_0`) and the number of negative ones (`c_{-1}`) in the input array.
+2.  The initial number of operations is `c_0`, to convert all zeros to ones.
+3.  Check the parity of `c_{-1}`. If it's odd, we need to change one `-1` to a `1`, which costs an additional 2 operations.
+4.  The total minimum operations will be `c_0` if `c_{-1}` is even, and `c_0 + 2` if `c_{-1}` is odd.
+
+**Example Walkthrough: `[-1, -1, -1, 0, 0]`**
+1.  `c_0 = 2` (two zeros), `c_{-1} = 3` (three -1s).
+2.  Operations for zeros: `2`. The array effectively becomes `[-1, -1, -1, 1, 1]`.
+3.  The count of negatives, `c_{-1} = 3`, is odd. The product is negative.
+4.  We need to fix the sign. We change one `-1` to `1`. This costs 2 operations.
+5.  Total operations = `2 (for zeros) + 2 (for one -1) = 4`.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <numeric>
+
+// Function to solve a single test case
+void solve() {
+    int n;
+    std::cin >> n;
+    
+    int zero_count = 0;
+    int neg_count = 0;
+    
+    for (int i = 0; i < n; ++i) {
+        int a;
+        std::cin >> a;
+        if (a == 0) {
+            zero_count++;
+        } else if (a == -1) {
+            neg_count++;
+        }
+    }
+    
+    int operations = zero_count;
+    
+    // After turning all 0s into 1s, we check the parity of negative numbers.
+    // If the count of -1s is odd, we need to change one -1 to a positive number.
+    // The cheapest way is -1 -> 0 -> 1, which costs 2 operations.
+    if (neg_count % 2 != 0) {
+        operations += 2;
+    }
+    
+    std::cout << operations << std::endl;
+}
+
+int main() {
+    // Fast I/O
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    
+    int t;
+    std::cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
+```

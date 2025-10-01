@@ -1,0 +1,226 @@
+Yes, the image provided shows the full problem statement and all necessary details to solve the problem.
+
+### Problem Analysis
+
+Here's a breakdown of the problem statement:
+
+**Goal:** Find the path from vertex 1 to vertex `n` that minimizes the total travel time. Among all paths with the minimum total time, find the one that minimizes the total time spent waiting.
+
+**State and Transitions:** The problem can be modeled as a shortest path problem on a state graph. A state is defined not just by the current vertex `u`, but also by the current time `t`, since the available move depends on `t`.
+- A state can be represented as `(u, t)`, meaning we are at vertex `u` at time `t`.
+- From state `(u, t)`, we have two types of transitions, each taking one second:
+    1.  **Wait:** Transition to state `(u, t+1)`. This increases total time by 1 and wait time by 1.
+    2.  **Move:** Transition to state `(v, t+1)`. This is only possible if `v` is the neighbor connected by the `(t mod deg(u) + 1)`-th edge of `u`. This increases total time by 1, but wait time remains unchanged.
+
+The state space `(u, t)` is infinite because time `t` can increase indefinitely. A standard shortest path algorithm like Dijkstra needs a finite (or practically finite) number of states.
+
+### Constraints
+
+*   **Number of test cases (t):** `1 <= t <= 1000`
+*   **Number of vertices (n):** `2 <= n <= 5000`
+*   **Number of edges (m):** `n-1 <= m <= n(n-1)/2`
+*   **Sum of n over all test cases:** ` <= 5000`
+*   **Sum of m over all test cases:** ` <= 5 * 10^5`
+*   The graph is simple (no self-loops or multiple edges between the same two vertices) and connected.
+
+### Input/Output Format
+
+*   **Input:**
+    *   The first line contains `t`, the number of test cases.
+    *   Each test case starts with a line containing `n` and `m`.
+    *   The next `m` lines each contain two integers `u_i` and `v_i`, describing an edge. The order of these edges in the input determines the 1-based index for each vertex's adjacency list.
+*   **Output:**
+    *   For each test case, print a single line with two integers: the minimum total time to reach vertex `n`, and the minimum waiting time for a path that achieves this minimum total time.
+
+### Example
+
+*   **Input:**
+    ```
+    2
+    6 6
+    1 2
+    2 3
+    3 4
+    4 6
+    1 5
+    5 6
+    ... (rest of input not fully visible, but first case is complete)
+    ```
+*   **Analysis of first example:**
+    The graph has two disjoint paths from 1 to 6: `1-2-3-4-6` and `1-5-6`. All vertices have a degree of 2.
+    - Let's trace path `1 -> 5 -> 6`:
+        - At `(1, 0)`, `deg(1)=2`. The edges are `(1,2)` (1st) and `(1,5)` (2nd). `(0 mod 2) + 1 = 1`, so we must take the edge to 2. To go to 5, we must wait.
+        - Wait at 1 for 1 second. State becomes `(1, 1)`. Total time: 1, Wait time: 1.
+        - At `(1, 1)`, `(1 mod 2) + 1 = 2`. We can now take the 2nd edge to 5.
+        - Move `1 -> 5`. Arrive at `(5, 2)`. Total time: 2, Wait time: 1.
+        - At `(5, 2)`, `deg(5)=2`. Edges are `(5,1)` (1st), `(5,6)` (2nd). `(2 mod 2) + 1 = 1`. We must take the edge to 1. To go to 6, we must wait.
+        - Wait at 5 for 1 second. State becomes `(5, 3)`. Total time: 3, Wait time: 2.
+        - At `(5, 3)`, `(3 mod 2) + 1 = 2`. We can take the 2nd edge to 6.
+        - Move `5 -> 6`. Arrive at `(6, 4)`. **Total time: 4, Wait time: 2.**
+    This seems to be one possible path. The optimal one might be different.
+
+### Solution Approach
+
+The key challenge is the infinite state space. We can observe that arriving at a vertex `u` at a much later time is generally not better. An arrival time `t` is "lucky" if `t mod deg(u)` allows for an immediate desired move. The maximum wait time at any vertex `u` is `deg(u) - 1`. This suggests that if we arrive at `u` at time `t₁` and also at `t₂` where `t₂` is much larger than `t₁`, the path through `t₂` is likely suboptimal.
+
+This leads to a powerful heuristic: for each vertex `u`, we only need to keep track of states `(u, t)` where `t` is "close" to `min_t[u]`, the minimum time found so far to reach `u`. We can define "close" as being within a time window of a constant `C`. Let `dt = t - min_t[u]`. We only explore states where `0 <= dt < C`.
+
+This transforms the problem into a Dijkstra's algorithm on a finite state graph where states are `(u, dt)`. The number of states becomes `n * C`. With `sum(n) <= 5000` and a reasonable constant `C` (e.g., 600, which is larger than most practical vertex degrees), this approach is feasible.
+
+**Algorithm:**
+1.  **State Representation:** A state in our Dijkstra priority queue will be `(total_time, wait_time, u)`.
+2.  **Distance Tracking:** We'll use two arrays:
+    *   `min_t[u]`: stores the minimum total time found so far to reach vertex `u`.
+    *   `min_w[u][dt]`: stores the minimum wait time to reach vertex `u` at time `min_t[u] + dt`.
+3.  **Dijkstra's Algorithm:**
+    *   Initialize `min_t` and `min_w` to infinity.
+    *   Set `min_t[1] = 0`, `min_w[1][0] = 0` and push `{0, 0, 1}` to the priority queue.
+    *   While the priority queue is not empty, extract the state `{t, w, u}` with the minimum `t` (and `w` as a tie-breaker).
+    *   Let `dt = t - min_t[u]`. If `dt >= C` or this state is already processed with a better wait time (`w > min_w[u][dt]`), skip it.
+    *   From state `(u,t)`:
+        *   **Wait:** A new state is reached at vertex `u` at time `t+1` with wait time `w+1`. If `t+1` is within the time window (`t+1 < min_t[u] + C`), update `min_w` and push to the queue if a better path is found.
+        *   **Move:** Determine the neighbor `v` based on `(t mod deg(u) + 1)`. A new state is reached at `v` at `t+1` with wait time `w`.
+            *   If this path is the new best overall path to `v` (`t+1 < min_t[v]`), update `min_t[v]`, set `min_w[v][0] = w`, and push to the queue.
+            *   Otherwise, calculate `dt_new = (t+1) - min_t[v]`. If `dt_new < C`, update `min_w[v][dt_new]` and push if a better path for this specific state `(v, dt_new)` is found.
+4.  The final answer for vertex `n` is found once Dijkstra terminates. We can keep track of the best `{total_time, wait_time}` pair for vertex `n` as we encounter it.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <tuple>
+#include <utility>
+
+using namespace std;
+
+const long long INF = 1e18;
+const int C = 600; // Heuristic constant for time delta window
+
+// State for priority queue
+struct State {
+    long long total_time;
+    long long wait_time;
+    int u;
+
+    bool operator>(const State& other) const {
+        if (total_time != other.total_time) {
+            return total_time > other.total_time;
+        }
+        return wait_time > other.wait_time;
+    }
+};
+
+void solve() {
+    int n;
+    int m;
+    cin >> n >> m;
+
+    vector<vector<pair<int, int>>> adj_input_order(n + 1);
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        adj_input_order[u].push_back({v, 0});
+        adj_input_order[v].push_back({u, 0});
+    }
+
+    vector<vector<pair<int, int>>> adj(n + 1);
+    vector<int> deg(n + 1, 0);
+    for (int i = 1; i <= n; ++i) {
+        deg[i] = adj_input_order[i].size();
+        int edge_idx = 1;
+        for(auto p : adj_input_order[i]) {
+            adj[i].push_back({p.first, edge_idx++});
+        }
+    }
+
+    vector<long long> min_t(n + 1, INF);
+    vector<vector<long long>> min_w(n + 1, vector<long long>(C, INF));
+
+    priority_queue<State, vector<State>, greater<State>> pq;
+
+    min_t[1] = 0;
+    min_w[1][0] = 0;
+    pq.push({0, 0, 1});
+
+    pair<long long, long long> ans = {INF, INF};
+
+    while (!pq.empty()) {
+        auto [t, w, u] = pq.top();
+        pq.pop();
+
+        if (min_t[u] == INF || t > min_t[u] + C) {
+            continue;
+        }
+        int dt = t - min_t[u];
+        if (dt >= C || w > min_w[u][dt]) {
+            continue;
+        }
+
+        if (u == n) {
+             if (t < ans.first || (t == ans.first && w < ans.second)) {
+                ans = {t, w};
+            }
+        }
+        
+        if (t > ans.first) continue;
+
+        // Option 1: Wait
+        long long t_new_wait = t + 1;
+        long long w_new_wait = w + 1;
+
+        if (t_new_wait < min_t[u] + C) {
+            int dt_new = dt + 1;
+            if (w_new_wait < min_w[u][dt_new]) {
+                min_w[u][dt_new] = w_new_wait;
+                pq.push({t_new_wait, w_new_wait, u});
+            }
+        }
+
+        // Option 2: Move
+        if (deg[u] > 0) {
+            int edge_idx_to_take = (t % deg[u]) + 1;
+            int v = -1;
+            for (const auto& edge : adj[u]) {
+                if (edge.second == edge_idx_to_take) {
+                    v = edge.first;
+                    break;
+                }
+            }
+            
+            if (v != -1) {
+                long long t_new_move = t + 1;
+                long long w_new_move = w;
+
+                if (t_new_move < min_t[v]) {
+                    min_t[v] = t_new_move;
+                    min_w[v][0] = w_new_move;
+                    pq.push({t_new_move, w_new_move, v});
+                } else {
+                    int dt_new = t_new_move - min_t[v];
+                    if (dt_new < C) {
+                        if (w_new_move < min_w[v][dt_new]) {
+                            min_w[v][dt_new] = w_new_move;
+                            pq.push({t_new_move, w_new_move, v});
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    cout << ans.first << " " << ans.second << endl;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
+```

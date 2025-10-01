@@ -1,0 +1,209 @@
+Yes, the image provided contains the full problem statement and all necessary details to solve it.
+
+### Problem Breakdown
+
+Here is a structured breakdown of the problem:
+
+**1. Problem Statement**
+
+You are in an undirected tree with `n` vertices, rooted at vertex 1. Each vertex `i` has a weight `w_i` which is either `1` or `-1`. At time `t=0`, a volcano erupts at the root. At any time `t`, lava floods all vertices `v` whose shortest distance from the root (number of edges) is less than or equal to `t`.
+
+You start at a given vertex `st` at time `t=0` with a life value `S=1`. The following events happen at each time step `t` (starting from `t=0`):
+1.  You are at vertex `u`. Your life value is updated: `S = S + w_u`.
+2.  You die if either your life `S` becomes 0 or if your current vertex `u` is flooded by lava at time `t`. A vertex `u` is flooded at time `t` if its distance from the root (vertex 1) is less than or equal to `t`.
+3.  If you survive, you **must** move to an adjacent vertex. You arrive at the chosen vertex at the next time step, `t+1`.
+
+The goal is to find the maximum number of moves you can make before you die.
+
+**2. Constraints**
+
+*   `1 ≤ T ≤ 10^4` (Number of test cases)
+*   `2 ≤ st ≤ n ≤ 5 * 10^5`
+*   The sum of `n` over all test cases does not exceed `10^6`.
+*   `w_i ∈ {1, -1}`
+*   `w_{st} = 1`
+*   The graph is a tree.
+
+**3. Input/Output Format**
+
+*   **Input:**
+    *   The first line contains `T`, the number of test cases.
+    *   For each test case:
+        *   The first line contains two integers `n` and `st`.
+        *   The second line contains `n` integers `w_1, w_2, ..., w_n`.
+        *   The next `n-1` lines each contain two integers `u, v`, describing an edge.
+*   **Output:**
+    *   For each test case, output a single integer representing the maximum number of moves you can make.
+
+**4. Example**
+
+*   **Input:**
+    ```
+    1
+    7 4
+    -1 -1 -1 1 1 1 -1
+    2 1
+    3 2
+    4 3
+    5 3
+    6 5
+    7 1
+    ```
+*   The example is taken from the screenshot. The full output for this example is not visible, but based on analysis, the answer should be `3`. A possible path is `4 -> 3 -> 5 -> 6`.
+
+---
+
+### Solution Approach
+
+The problem asks for the maximum number of moves, which is equivalent to the maximum time `t` we can survive. We can explore the tree from the starting vertex `st` and keep track of the time and our life.
+
+The core idea is to perform a Depth First Search (DFS) starting from `st`. The state in our DFS will be `(u, p, t, life)`, representing being at vertex `u`, having come from parent `p` in the DFS traversal, at time `t`, with a life value `life` *before* collecting the weight of `u`.
+
+A crucial observation is that any valid path can be seen as a simple path with some "stalling" maneuvers. A stall maneuver consists of moving back and forth between two adjacent vertices, like `u -> v -> u`. This takes 2 units of time and changes life by `w_u + w_v`. This can be beneficial if `w_u + w_v >= 0` to extend our survival time, as long as we don't get caught by the lava.
+
+Our overall strategy will be:
+1.  **Preprocessing:**
+    *   Read the tree structure and weights.
+    *   Calculate the depth of each vertex (distance from root 1) using a Breadth-First Search (BFS). This will be used to check the lava condition `depth[u] > t`.
+
+2.  **Main DFS Traversal:**
+    *   We'll use a recursive DFS function, say `solve_dfs(u, p, t, life)`.
+    *   In this function, for the current state at vertex `u` and time `t`:
+        a. Calculate `current_life = life + w[u]`.
+        b. Check for death conditions: `depth[u] <= t` or `current_life <= 0`. If we die, we cannot proceed from this state, so we return.
+        c. If we survive, we have made `t` moves. We update our global maximum answer: `max_moves = max(max_moves, t)`.
+        d. From `u`, we have two types of continuations:
+            i. **Extend the simple path:** For each neighbor `v` of `u` (that is not our parent `p` in the DFS tree), we make a recursive call `solve_dfs(v, u, t + 1, current_life)`. This explores all simple paths starting from `st`.
+            ii. **Stall (yo-yo moves):** For each neighbor `v` of `u`, we can try to move back and forth between `u` and `v` as many times as possible. This is a local optimization to extend time. We calculate the maximum number of `u -> v -> u` cycles possible, limited by both lava and life.
+                *   **Lava limit:** Each cycle takes 2 time steps. The number of cycles `m` is constrained by `depth[u] > t + 2m` and `depth[v] > t + 2m - 1`.
+                *   **Life limit:** If `w[u] + w[v] = -2`, each cycle decreases life by 2. The number of cycles is limited by the current life. If `w[u] + w[v] >= 0`, life does not decrease, so it's not a limiting factor.
+            We calculate the maximum number of moves achievable by stalling and update the global `max_moves`. This includes the `t` moves to get to `u`, plus `2m` for the cycles, and potentially one final `u -> v` move.
+
+This combined approach explores all simple paths and, at each step of each path, considers the optimal stalling strategy. This exhaustively covers all possibilities and will find the maximum number of moves. The time complexity will be `O(N)` per test case, as the DFS visits each node and edge once, and the work done at each node is proportional to its degree.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <queue>
+
+using namespace std;
+
+int n, st;
+vector<int> w;
+vector<vector<int>> adj;
+vector<int> depth;
+long long max_moves;
+
+// Pre-calculates the depth of each node from the root (vertex 1)
+void bfs_depth() {
+    depth.assign(n + 1, -1);
+    queue<int> q;
+
+    q.push(1);
+    depth[1] = 0;
+
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+
+        for (int v : adj[u]) {
+            if (depth[v] == -1) {
+                depth[v] = depth[u] + 1;
+                q.push(v);
+            }
+        }
+    }
+}
+
+// DFS to explore paths and stalling maneuvers
+void solve_dfs(int u, int p, int t, long long life) {
+    long long current_life = life + w[u];
+
+    // Check death conditions
+    if (depth[u] <= t || current_life <= 0) {
+        return;
+    }
+
+    // Update max_moves for the simple path ending at u
+    max_moves = max(max_moves, (long long)t);
+
+    // Option 1: Stall at (u, v)
+    for (int v : adj[u]) {
+        // Check if a full u->v->u cycle is possible
+        if (current_life + w[v] <= 0 || depth[v] <= t + 1) continue;
+        if (current_life + w[v] + w[u] <= 0 || depth[u] <= t + 2) continue;
+
+        // If a cycle is possible, calculate max number of cycles 'm'
+        long long m_lava = 0;
+        if (depth[u] > t + 1 && depth[v] > t) {
+            m_lava = min((long long)depth[u] - t - 1, (long long)depth[v] - t) / 2;
+        }
+        if (m_lava <= 0) continue;
+
+        long long m;
+        long long weight_sum_cycle = w[u] + w[v];
+
+        if (weight_sum_cycle >= 0) {
+            m = m_lava;
+        } else { // weight_sum_cycle is -2
+            long long m_life = (current_life - 1) / 2;
+            m = min(m_lava, m_life);
+        }
+
+        if (m > 0) {
+            long long time_at_u_after_cycles = t + 2 * m;
+            max_moves = max(max_moves, time_at_u_after_cycles);
+
+            // Check if one last u->v move is possible
+            long long life_at_u_after_cycles = current_life + m * weight_sum_cycle;
+            if (life_at_u_after_cycles + w[v] > 0 && depth[v] > time_at_u_after_cycles + 1) {
+                max_moves = max(max_moves, time_at_u_after_cycles + 1);
+            }
+        }
+    }
+
+    // Option 2: Extend simple path
+    for (int v : adj[u]) {
+        if (v != p) {
+            solve_dfs(v, u, t + 1, current_life);
+        }
+    }
+}
+
+void solve_test_case() {
+    cin >> n >> st;
+    w.assign(n + 1, 0);
+    adj.assign(n + 1, vector<int>());
+    for (int i = 1; i <= n; ++i) {
+        cin >> w[i];
+    }
+    for (int i = 0; i < n - 1; ++i) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+
+    bfs_depth();
+
+    max_moves = 0;
+    // Initial call: at st, time 0, life is 1 before collecting w[st]
+    solve_dfs(st, 0, 0, 1);
+
+    cout << max_moves << endl;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve_test_case();
+    }
+    return 0;
+}
+```

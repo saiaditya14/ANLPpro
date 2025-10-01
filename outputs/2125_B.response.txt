@@ -1,0 +1,134 @@
+Yes, the image provided shows the full problem statement and all necessary details for solving the problem "B. Left and Down" from Codeforces.
+
+### Problem Analysis
+
+**1. Constraints:**
+*   Number of test cases, `t`: `1 ≤ t ≤ 10^4`
+*   Initial coordinates, `a`, `b`: `1 ≤ a, b ≤ 10^18`
+*   Maximum move value, `k`: `1 ≤ k ≤ 10^18`
+*   The values of `a`, `b`, and `k` require the use of 64-bit integers (e.g., `long long` in C++).
+
+**2. Input Format:**
+*   The first line contains a single integer `t`, the number of test cases.
+*   Each of the next `t` lines describes a test case with three space-separated integers `a`, `b`, and `k`.
+
+**3. Output Format:**
+*   For each test case, output a single integer: the minimum total cost to move the robot from `(a, b)` to `(0, 0)`.
+
+**4. Examples:**
+*   **Input:**
+    ```
+    4
+    3 5 15
+    2 3 1
+    12 18 8
+    9 7 5
+    ```
+*   **Output:**
+    ```
+    1
+    2
+    1
+    2
+    ```
+
+### Solution Approach
+
+The problem asks for the minimum cost to move a robot from `(a, b)` to `(0, 0)`. A move consists of choosing `dx` and `dy` (where `0 ≤ dx, dy ≤ k`) and changing the robot's position from `(x, y)` to `(x - dx, y - dy)`. The cost is the number of *unique* pairs `(dx, dy)` used.
+
+The total displacement required is `(a, b)`. We need to find the minimum number of unique vectors `V_i = (dx_i, dy_i)` such that `(a, b)` can be expressed as a non-negative integer linear combination of these vectors, i.e., `(a, b) = c_1*V_1 + c_2*V_2 + ... + c_m*V_m`, where `m` (the cost) is minimized.
+
+#### Case 1: Minimum Cost is 1
+
+Can we achieve the goal using only one unique vector `V = (dx, dy)`?
+This would mean `(a, b) = c * (dx, dy)` for some integer `c ≥ 1`.
+This implies `a = c * dx` and `b = c * dy`.
+From this, `c` must be a common divisor of `a` and `b`. The vector `V` would be `(a/c, b/c)`.
+For `V` to be a valid move, its components must be less than or equal to `k`. That is, `dx ≤ k` and `dy ≤ k`, which means `a/c ≤ k` and `b/c ≤ k`.
+
+To give ourselves the best chance of satisfying these conditions, we should make `a/c` and `b/c` as small as possible. This is achieved by choosing the largest possible common divisor for `c`, which is `g = gcd(a, b)`.
+If we choose `c = g`, the vector components are `a/g` and `b/g`. If `a/g ≤ k` and `b/g ≤ k`, then we can use the vector `V = (a/g, b/g)` exactly `g` times to achieve the total displacement of `(a, b)`. The cost is 1.
+
+If this condition fails for the largest common divisor `g`, it will also fail for any smaller common divisor `c`, because `a/c` and `b/c` would be even larger.
+Therefore, the cost is 1 if and only if `max(a/gcd(a, b), b/gcd(a, b)) ≤ k`.
+
+#### Case 2: Minimum Cost is 2
+
+If the condition for a cost-1 solution is not met, the minimum cost must be greater than 1. Let's see if a solution with cost 2 is always possible.
+
+We need to find two valid vectors, `V_1 = (dx_1, dy_1)` and `V_2 = (dx_2, dy_2)`, that can be combined to form the total displacement `(a, b)`.
+
+Consider the following construction:
+1.  Achieve the `a` displacement along the x-axis using one type of move.
+2.  Achieve the `b` displacement along the y-axis using another type of move.
+
+Let `V_1 = (gcd(a, k), 0)`. This is a valid move vector because `gcd(a, k) ≤ k`. Since `gcd(a, k)` divides `a`, we can apply this move `a / gcd(a, k)` times to achieve a total x-displacement of `a` and a y-displacement of 0.
+
+Let `V_2 = (0, gcd(b, k))`. This is also a valid move because `gcd(b, k) ≤ k`. We can apply this move `b / gcd(b, k)` times to get a y-displacement of `b` and an x-displacement of 0.
+
+By performing both sets of operations, the total displacement is `(a, b)`. Since `a, b, k ≥ 1`, `V_1` and `V_2` are distinct non-zero vectors. This strategy uses two unique vectors, so the cost is 2.
+
+This construction always works. Therefore, if a cost-1 solution is not possible, a cost-2 solution always is.
+
+#### Final Algorithm
+1.  Read `a`, `b`, and `k`.
+2.  Calculate `g = gcd(a, b)`.
+3.  Check if `a/g ≤ k` and `b/g ≤ k`. This is equivalent to `max(a/g, b/g) ≤ k`.
+4.  If the condition is true, the minimum cost is 1.
+5.  Otherwise, the minimum cost is 2.
+
+### C++ Solution
+
+```cpp
+#include <iostream>
+#include <numeric>      // For std::gcd
+#include <algorithm>    // For std::max
+
+// Function to solve a single test case
+void solve() {
+    long long a, b, k;
+    std::cin >> a >> b >> k;
+
+    // Calculate the greatest common divisor of a and b.
+    long long g = std::gcd(a, b);
+
+    // --- Check for Cost 1 ---
+    // A cost of 1 is possible if we can find a single vector (dx, dy)
+    // and a number of repetitions 'c' such that c * (dx, dy) = (a, b).
+    // This implies (dx, dy) = (a/c, b/c), where c is a common divisor of a and b.
+    // To satisfy the move constraints (dx <= k, dy <= k), we need a/c <= k and b/c <= k.
+    // To maximize our chances, we should make a/c and b/c as small as possible,
+    // which means choosing the largest possible c, i.e., c = gcd(a, b).
+    // If the condition holds for c = gcd(a,b), a cost-1 solution exists.
+    // Otherwise, it's impossible with one move.
+    
+    long long required_dx = a / g;
+    long long required_dy = b / g;
+
+    if (std::max(required_dx, required_dy) <= k) {
+        std::cout << 1 << std::endl;
+    } else {
+        // --- Cost 2 ---
+        // If a cost-1 solution is not possible, a cost-2 solution is always achievable.
+        // We can use two vectors:
+        // V1 = (gcd(a, k), 0) to cover the x-displacement.
+        // V2 = (0, gcd(b, k)) to cover the y-displacement.
+        // This construction always works and uses two distinct vectors.
+        std::cout << 2 << std::endl;
+    }
+}
+
+int main() {
+    // Fast I/O
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    int t;
+    std::cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}
+```
