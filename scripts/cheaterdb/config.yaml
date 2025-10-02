@@ -7,14 +7,27 @@ api:
 analysis:
   days_to_analyze: 90
   max_problematic_threshold: 3
-  max_rating_threshold: 1400 
+  min_rating_threshold: 1200
+  max_rating_threshold: 1800 
 
 processing:
-  users_l: 0
-  users_r: 500
+  users_l: 200
+  users_r: 700
   enable_debug: true
 
 files:
   user_list: "scripts/cheaterdb/list.json"
-  output_all: "scripts/cheaterdb/suspicious_users_${processing.users_l}-${processing.users_r}.json"
-  output_filtered: "scripts/cheaterdb/filtered_problems_${processing.users_l}-${processing.users_r}.json"
+  output_all: 
+    "scripts/cheaterdb/suspicious_users_${processing.users_l}-${processing.users_r}.json"
+  output_filtered: 
+    "scripts/cheaterdb/filtered_problems_${processing.users_l}-${processing.users_r}.json"
+
+codeforces:
+  cookies: ${oc.env:COOKIES}
+  program_type_id: 73 # GNU G++20 11.2.0 (64 bit, MSYS2)
+  key: ${oc.env:KEY}
+  secret: ${oc.env:SECRET}
+
+gemini:
+  api_key: ${oc.env:GEMINI_API_KEY}
+  prompt: "Solve this in C++:\n\n"

@@ -1,0 +1,1892 @@
+[
+  {
+    "contestId": 1512,
+    "index": "G",
+    "name": "Short Task",
+    "rating": 1700
+  },
+  {
+    "contestId": 2128,
+    "index": "D",
+    "name": "Sum of LDS",
+    "rating": 1600
+  },
+  {
+    "contestId": 2137,
+    "index": "E",
+    "name": "Mexification",
+    "rating": 1500
+  },
+  {
+    "contestId": 2136,
+    "index": "D",
+    "name": "For the Champion",
+    "rating": 1700
+  },
+  {
+    "contestId": 2132,
+    "index": "C2",
+    "name": "The Cunning Seller (hard version)",
+    "rating": 1400
+  },
+  {
+    "contestId": 2131,
+    "index": "D",
+    "name": "Arboris Contractio",
+    "rating": 1400
+  },
+  {
+    "contestId": 2110,
+    "index": "C",
+    "name": "Racing",
+    "rating": 1400
+  },
+  {
+    "contestId": 2127,
+    "index": "B",
+    "name": "Hamiiid, Haaamid... Hamid?",
+    "rating": 1300
+  },
+  {
+    "contestId": 2127,
+    "index": "C",
+    "name": "Trip Shopping",
+    "rating": 1400
+  },
+  {
+    "contestId": 2026,
+    "index": "B",
+    "name": "Black Cells",
+    "rating": 1300
+  },
+  {
+    "contestId": 1951,
+    "index": "B",
+    "name": "Battle Cows",
+    "rating": 1200
+  },
+  {
+    "contestId": 1360,
+    "index": "F",
+    "name": "Spy-string",
+    "rating": 1700
+  },
+  {
+    "contestId": 2020,
+    "index": "B",
+    "name": "Brightness Begins",
+    "rating": 1200
+  },
+  {
+    "contestId": 295,
+    "index": "A",
+    "name": "Greg and Array",
+    "rating": 1400
+  },
+  {
+    "contestId": 1826,
+    "index": "D",
+    "name": "Running Miles",
+    "rating": 1700
+  },
+  {
+    "contestId": 2126,
+    "index": "E",
+    "name": "G-C-D, Unlucky!",
+    "rating": 1400
+  },
+  {
+    "contestId": 2128,
+    "index": "C",
+    "name": "Leftmost Below",
+    "rating": 1200
+  },
+  {
+    "contestId": 103536,
+    "index": "A",
+    "name": "Guards",
+    "rating": null
+  },
+  {
+    "contestId": 2122,
+    "index": "C",
+    "name": "Manhattan Pairs",
+    "rating": 1700
+  },
+  {
+    "contestId": 2024,
+    "index": "C",
+    "name": "Concatenation of Arrays",
+    "rating": 1300
+  },
+  {
+    "contestId": 1649,
+    "index": "D",
+    "name": "Integral Array",
+    "rating": 1800
+  },
+  {
+    "contestId": 222,
+    "index": "C",
+    "name": "Reducing Fractions",
+    "rating": 1800
+  },
+  {
+    "contestId": 1526,
+    "index": "B",
+    "name": "I Hate 1111",
+    "rating": 1400
+  },
+  {
+    "contestId": 2107,
+    "index": "C",
+    "name": "Maximum Subarray Sum",
+    "rating": 1500
+  },
+  {
+    "contestId": 1738,
+    "index": "B",
+    "name": "Prefix Sum Addicts",
+    "rating": 1200
+  },
+  {
+    "contestId": 1285,
+    "index": "C",
+    "name": "Fadi and LCM",
+    "rating": 1400
+  },
+  {
+    "contestId": 1203,
+    "index": "C",
+    "name": "Common Divisors",
+    "rating": 1300
+  },
+  {
+    "contestId": 2148,
+    "index": "F",
+    "name": "Gravity Falls",
+    "rating": 1800
+  },
+  {
+    "contestId": 2119,
+    "index": "C",
+    "name": "A Good Problem",
+    "rating": 1300
+  },
+  {
+    "contestId": 2119,
+    "index": "B",
+    "name": "Line Segments",
+    "rating": 1200
+  },
+  {
+    "contestId": 2141,
+    "index": "C",
+    "name": "Minimum on Subarrays",
+    "rating": 1800
+  },
+  {
+    "contestId": 2141,
+    "index": "B",
+    "name": "Games",
+    "rating": 1200
+  },
+  {
+    "contestId": 101021,
+    "index": "1",
+    "name": "Guess the Number",
+    "rating": null
+  },
+  {
+    "contestId": 106007,
+    "index": "I",
+    "name": "Reverse and Remove",
+    "rating": null
+  },
+  {
+    "contestId": 105321,
+    "index": "B",
+    "name": "Period Search",
+    "rating": null
+  },
+  {
+    "contestId": 105321,
+    "index": "L",
+    "name": "Games",
+    "rating": null
+  },
+  {
+    "contestId": 2149,
+    "index": "E",
+    "name": "Hidden Knowledge of the Ancients",
+    "rating": 1500
+  },
+  {
+    "contestId": 2143,
+    "index": "C",
+    "name": "Max Tree",
+    "rating": 1300
+  },
+  {
+    "contestId": 103934,
+    "index": "I",
+    "name": "Offering to god Ra",
+    "rating": null
+  },
+  {
+    "contestId": 106039,
+    "index": "G",
+    "name": "Incompatible Pairs",
+    "rating": null
+  },
+  {
+    "contestId": 106039,
+    "index": "M",
+    "name": "Nomad",
+    "rating": null
+  },
+  {
+    "contestId": 903,
+    "index": "B",
+    "name": "The Modcrab",
+    "rating": 1200
+  },
+  {
+    "contestId": 104493,
+    "index": "K",
+    "name": "Sam-Oh, the funny coach",
+    "rating": null
+  },
+  {
+    "contestId": 105979,
+    "index": "C",
+    "name": "Chicken Jockey",
+    "rating": null
+  },
+  {
+    "contestId": 105979,
+    "index": "F",
+    "name": "Fixing logs",
+    "rating": null
+  },
+  {
+    "contestId": 104493,
+    "index": "G",
+    "name": "Don't Make It 2",
+    "rating": null
+  },
+  {
+    "contestId": 103443,
+    "index": "D",
+    "name": "Largest Remainder",
+    "rating": null
+  },
+  {
+    "contestId": 105492,
+    "index": "G",
+    "name": "Grocery Greed",
+    "rating": null
+  },
+  {
+    "contestId": 2126,
+    "index": "D",
+    "name": "This Is the Last Time",
+    "rating": 1200
+  },
+  {
+    "contestId": 1446,
+    "index": "A",
+    "name": "Knapsack",
+    "rating": 1300
+  },
+  {
+    "contestId": 2149,
+    "index": "D",
+    "name": "A and B",
+    "rating": 1200
+  },
+  {
+    "contestId": 550,
+    "index": "A",
+    "name": "Two Substrings",
+    "rating": 1500
+  },
+  {
+    "contestId": 4,
+    "index": "C",
+    "name": "Registration System",
+    "rating": 1300
+  },
+  {
+    "contestId": 279,
+    "index": "B",
+    "name": "Books",
+    "rating": 1400
+  },
+  {
+    "contestId": 2132,
+    "index": "E",
+    "name": "Arithmetics Competition",
+    "rating": 1700
+  },
+  {
+    "contestId": 2033,
+    "index": "D",
+    "name": "Kousuke's Assignment",
+    "rating": 1300
+  },
+  {
+    "contestId": 1158,
+    "index": "A",
+    "name": "The Party and Sweets",
+    "rating": 1500
+  },
+  {
+    "contestId": 2147,
+    "index": "C",
+    "name": "Rabbits",
+    "rating": 1500
+  },
+  {
+    "contestId": 2124,
+    "index": "D",
+    "name": "Make a Palindrome",
+    "rating": 1700
+  },
+  {
+    "contestId": 2135,
+    "index": "B",
+    "name": "For the Champion",
+    "rating": 1700
+  },
+  {
+    "contestId": 1999,
+    "index": "G1",
+    "name": "Ruler (easy version)",
+    "rating": 1500
+  },
+  {
+    "contestId": 1406,
+    "index": "B",
+    "name": "Maximum Product",
+    "rating": 1200
+  },
+  {
+    "contestId": 1506,
+    "index": "D",
+    "name": "Epic Transformation",
+    "rating": 1400
+  },
+  {
+    "contestId": 1894,
+    "index": "C",
+    "name": "Anonymous Informant",
+    "rating": 1400
+  },
+  {
+    "contestId": 1944,
+    "index": "C",
+    "name": "MEX Game 1",
+    "rating": 1300
+  },
+  {
+    "contestId": 820,
+    "index": "B",
+    "name": "Mister B and Angle in Polygon",
+    "rating": 1300
+  },
+  {
+    "contestId": 1875,
+    "index": "B",
+    "name": "Jellyfish and Game",
+    "rating": 1200
+  },
+  {
+    "contestId": 2131,
+    "index": "E",
+    "name": "Adjacent XOR",
+    "rating": 1400
+  },
+  {
+    "contestId": 2124,
+    "index": "C",
+    "name": "Subset Multiplication",
+    "rating": 1300
+  },
+  {
+    "contestId": 48,
+    "index": "C",
+    "name": "The Race",
+    "rating": 1800
+  },
+  {
+    "contestId": 2049,
+    "index": "C",
+    "name": "MEX Cycle",
+    "rating": 1500
+  },
+  {
+    "contestId": 1675,
+    "index": "F",
+    "name": "Vlad and Unfinished Business",
+    "rating": 1800
+  },
+  {
+    "contestId": 1691,
+    "index": "D",
+    "name": "Max GEQ Sum",
+    "rating": 1800
+  },
+  {
+    "contestId": 1678,
+    "index": "B2",
+    "name": "Tokitsukaze and Good 01-String (hard version)",
+    "rating": 1800
+  },
+  {
+    "contestId": 1729,
+    "index": "E",
+    "name": "Guess the Cycle Size",
+    "rating": 1800
+  },
+  {
+    "contestId": 1734,
+    "index": "D",
+    "name": "Slime Escape",
+    "rating": 1800
+  },
+  {
+    "contestId": 1780,
+    "index": "D",
+    "name": "Bit Guessing Game",
+    "rating": 1800
+  },
+  {
+    "contestId": 1801,
+    "index": "B",
+    "name": "Buying gifts",
+    "rating": 1800
+  },
+  {
+    "contestId": 1809,
+    "index": "D",
+    "name": "Binary String Sorting",
+    "rating": 1800
+  },
+  {
+    "contestId": 1841,
+    "index": "C",
+    "name": "Ranom Numbers",
+    "rating": 1800
+  },
+  {
+    "contestId": 1721,
+    "index": "D",
+    "name": "Maximum AND",
+    "rating": 1800
+  },
+  {
+    "contestId": 1846,
+    "index": "F",
+    "name": "Rudolph and Mimic",
+    "rating": 1800
+  },
+  {
+    "contestId": 1851,
+    "index": "F",
+    "name": "Lisa and the Martians",
+    "rating": 1800
+  },
+  {
+    "contestId": 2150,
+    "index": "A",
+    "name": "Incremental Path",
+    "rating": 1300
+  },
+  {
+    "contestId": 2144,
+    "index": "D",
+    "name": "Price Tags",
+    "rating": 1800
+  },
+  {
+    "contestId": 102644,
+    "index": "C",
+    "name": "Fibonacci",
+    "rating": null
+  },
+  {
+    "contestId": 2125,
+    "index": "D",
+    "name": "Segments Covering",
+    "rating": 1600
+  },
+  {
+    "contestId": 2123,
+    "index": "E",
+    "name": "MEX Count",
+    "rating": 1400
+  },
+  {
+    "contestId": 2093,
+    "index": "E",
+    "name": "Min Max MEX",
+    "rating": 1500
+  },
+  {
+    "contestId": 915,
+    "index": "C",
+    "name": "Permute Digits",
+    "rating": 1700
+  },
+  {
+    "contestId": 1842,
+    "index": "C",
+    "name": "Tenzing and Balls",
+    "rating": 1500
+  },
+  {
+    "contestId": 1942,
+    "index": "C2",
+    "name": "Bessie's Birthday Cake (Hard Version)",
+    "rating": 1700
+  },
+  {
+    "contestId": 2039,
+    "index": "D",
+    "name": "Shohag Loves GCD",
+    "rating": 1700
+  },
+  {
+    "contestId": 2053,
+    "index": "C",
+    "name": "Bewitching Stargazer",
+    "rating": 1500
+  },
+  {
+    "contestId": 2004,
+    "index": "D",
+    "name": "Colored Portals",
+    "rating": 1600
+  },
+  {
+    "contestId": 369,
+    "index": "C",
+    "name": "Valera and Elections",
+    "rating": 1600
+  },
+  {
+    "contestId": 1530,
+    "index": "D",
+    "name": "Secret Santa",
+    "rating": 1600
+  },
+  {
+    "contestId": 2139,
+    "index": "E1",
+    "name": "Maple and Tree Beauty (Easy Version)",
+    "rating": 1800
+  },
+  {
+    "contestId": 102694,
+    "index": "B",
+    "name": "Dynamic Diameter",
+    "rating": null
+  },
+  {
+    "contestId": 2137,
+    "index": "D",
+    "name": "Replace with Occurrences",
+    "rating": 1200
+  },
+  {
+    "contestId": 1792,
+    "index": "B",
+    "name": "Stand-up Comedian",
+    "rating": 1200
+  },
+  {
+    "contestId": 2140,
+    "index": "C",
+    "name": "Ultimate Value",
+    "rating": 1500
+  },
+  {
+    "contestId": 1850,
+    "index": "H",
+    "name": "The Third Letter",
+    "rating": 1700
+  },
+  {
+    "contestId": 2133,
+    "index": "C",
+    "name": "The Nether",
+    "rating": 1400
+  },
+  {
+    "contestId": 2130,
+    "index": "C",
+    "name": "Double Perspective",
+    "rating": 1300
+  },
+  {
+    "contestId": 2110,
+    "index": "D",
+    "name": "Fewer Batteries",
+    "rating": 1700
+  },
+  {
+    "contestId": 825,
+    "index": "D",
+    "name": "Suitable Replacement",
+    "rating": 1500
+  },
+  {
+    "contestId": 1481,
+    "index": "C",
+    "name": "Fence Painting",
+    "rating": 1600
+  },
+  {
+    "contestId": 993,
+    "index": "A",
+    "name": "Two Squares",
+    "rating": 1600
+  },
+  {
+    "contestId": 1520,
+    "index": "F1",
+    "name": "Guess the K-th Zero (Easy version)",
+    "rating": 1600
+  },
+  {
+    "contestId": 1771,
+    "index": "C",
+    "name": "Hossam and Trainees",
+    "rating": 1600
+  },
+  {
+    "contestId": 1321,
+    "index": "C",
+    "name": "Remove Adjacent",
+    "rating": 1600
+  },
+  {
+    "contestId": 1462,
+    "index": "E1",
+    "name": "Close Tuples (easy version)",
+    "rating": 1500
+  },
+  {
+    "contestId": 7,
+    "index": "C",
+    "name": "Line",
+    "rating": 1800
+  },
+  {
+    "contestId": 510,
+    "index": "C",
+    "name": "Fox And Names",
+    "rating": 1600
+  },
+  {
+    "contestId": 104886,
+    "index": "C",
+    "name": "Fair Grading",
+    "rating": null
+  },
+  {
+    "contestId": 106007,
+    "index": "M",
+    "name": "Maximum Or Permutation",
+    "rating": null
+  },
+  {
+    "contestId": 106007,
+    "index": "L",
+    "name": "Equalize",
+    "rating": null
+  },
+  {
+    "contestId": 1845,
+    "index": "C",
+    "name": "Strong Password",
+    "rating": 1400
+  },
+  {
+    "contestId": 105316,
+    "index": "I",
+    "name": "Nested Circles",
+    "rating": null
+  },
+  {
+    "contestId": 105316,
+    "index": "G",
+    "name": "Intersection Not Allowed",
+    "rating": null
+  },
+  {
+    "contestId": 105316,
+    "index": "E",
+    "name": "Zero Hour",
+    "rating": null
+  },
+  {
+    "contestId": 104487,
+    "index": "N",
+    "name": "Fixing The Servers",
+    "rating": null
+  },
+  {
+    "contestId": 1826,
+    "index": "C",
+    "name": "Dreaming of Freedom",
+    "rating": 1300
+  },
+  {
+    "contestId": 981,
+    "index": "C",
+    "name": "Useful Decomposition",
+    "rating": 1400
+  },
+  {
+    "contestId": 1553,
+    "index": "D",
+    "name": "Backspace",
+    "rating": 1500
+  },
+  {
+    "contestId": 1442,
+    "index": "A",
+    "name": "Extreme Subtraction",
+    "rating": 1800
+  },
+  {
+    "contestId": 1923,
+    "index": "D",
+    "name": "Slimes",
+    "rating": 1800
+  },
+  {
+    "contestId": 1554,
+    "index": "D",
+    "name": "Diane",
+    "rating": 1800
+  },
+  {
+    "contestId": 1995,
+    "index": "C",
+    "name": "Squaring",
+    "rating": 1800
+  },
+  {
+    "contestId": 2146,
+    "index": "C",
+    "name": "Wrong Binary Search",
+    "rating": 1300
+  },
+  {
+    "contestId": 2132,
+    "index": "D",
+    "name": "From 1 to Infinity",
+    "rating": 1600
+  },
+  {
+    "contestId": 459,
+    "index": "B",
+    "name": "Pashmak and Flowers",
+    "rating": 1300
+  },
+  {
+    "contestId": 2021,
+    "index": "B",
+    "name": "Maximize Mex",
+    "rating": 1200
+  },
+  {
+    "contestId": 2147,
+    "index": "D",
+    "name": "Game on Array",
+    "rating": 1700
+  },
+  {
+    "contestId": 102397,
+    "index": "I",
+    "name": "Dr.Hjjawi and the MCQ",
+    "rating": null
+  },
+  {
+    "contestId": 104417,
+    "index": "M",
+    "name": "Computational Geometry",
+    "rating": null
+  },
+  {
+    "contestId": 104417,
+    "index": "D",
+    "name": "Fast and Fat",
+    "rating": null
+  },
+  {
+    "contestId": 102890,
+    "index": "H",
+    "name": "How to Work Less to Pass a Programming Course in Planet E-13",
+    "rating": null
+  },
+  {
+    "contestId": 102890,
+    "index": "M",
+    "name": "Mathematics society problem",
+    "rating": null
+  },
+  {
+    "contestId": 102890,
+    "index": "F",
+    "name": "Fit them all",
+    "rating": null
+  },
+  {
+    "contestId": 1915,
+    "index": "G",
+    "name": "Bicycles",
+    "rating": 1800
+  },
+  {
+    "contestId": 1213,
+    "index": "G",
+    "name": "Path Queries",
+    "rating": 1800
+  },
+  {
+    "contestId": 295,
+    "index": "B",
+    "name": "Greg and Graph",
+    "rating": 1700
+  },
+  {
+    "contestId": 2148,
+    "index": "E",
+    "name": "Split",
+    "rating": 1200
+  },
+  {
+    "contestId": 1758,
+    "index": "C",
+    "name": "Almost All Multiples",
+    "rating": 1400
+  },
+  {
+    "contestId": 2104,
+    "index": "D",
+    "name": "Array and GCD",
+    "rating": 1400
+  },
+  {
+    "contestId": 1806,
+    "index": "C",
+    "name": "Sequence Master",
+    "rating": 1600
+  },
+  {
+    "contestId": 1861,
+    "index": "C",
+    "name": "Queries for the Array",
+    "rating": 1600
+  },
+  {
+    "contestId": 1899,
+    "index": "F",
+    "name": "Alex's whims",
+    "rating": 1600
+  },
+  {
+    "contestId": 1592,
+    "index": "C",
+    "name": "Bakry and Partitioning",
+    "rating": 1700
+  },
+  {
+    "contestId": 1144,
+    "index": "F",
+    "name": "Graph Without Long Directed Paths",
+    "rating": 1700
+  },
+  {
+    "contestId": 1093,
+    "index": "D",
+    "name": "Beautiful Graph",
+    "rating": 1700
+  },
+  {
+    "contestId": 1647,
+    "index": "B",
+    "name": "Madoka and the Elegant Gift",
+    "rating": 1200
+  },
+  {
+    "contestId": 1611,
+    "index": "D",
+    "name": "Weights Assignment For Tree Edges",
+    "rating": 1500
+  },
+  {
+    "contestId": 1288,
+    "index": "C",
+    "name": "Two Arrays",
+    "rating": 1600
+  },
+  {
+    "contestId": 2114,
+    "index": "D",
+    "name": "Come a Little Closer",
+    "rating": 1400
+  },
+  {
+    "contestId": 2123,
+    "index": "F",
+    "name": "Minimize Fixed Points",
+    "rating": 1700
+  },
+  {
+    "contestId": 2134,
+    "index": "C",
+    "name": "Even Larger",
+    "rating": 1200
+  },
+  {
+    "contestId": 976,
+    "index": "C",
+    "name": "Nested Segments",
+    "rating": 1500
+  },
+  {
+    "contestId": 1919,
+    "index": "C",
+    "name": "Grouping Increases",
+    "rating": 1400
+  },
+  {
+    "contestId": 1775,
+    "index": "C",
+    "name": "Interesting Sequence",
+    "rating": 1600
+  },
+  {
+    "contestId": 1891,
+    "index": "C",
+    "name": "Smilo and Monsters",
+    "rating": 1500
+  },
+  {
+    "contestId": 1167,
+    "index": "C",
+    "name": "News Distribution",
+    "rating": 1400
+  },
+  {
+    "contestId": 1701,
+    "index": "C",
+    "name": "Schedule Management",
+    "rating": 1400
+  },
+  {
+    "contestId": 2151,
+    "index": "C",
+    "name": "Incremental Stay",
+    "rating": 1400
+  },
+  {
+    "contestId": 1540,
+    "index": "A",
+    "name": "Great Graphs",
+    "rating": 1400
+  },
+  {
+    "contestId": 2136,
+    "index": "C",
+    "name": "Against the Difference",
+    "rating": 1200
+  },
+  {
+    "contestId": 1183,
+    "index": "D",
+    "name": "Candy Box (easy version)",
+    "rating": 1400
+  },
+  {
+    "contestId": 1830,
+    "index": "A",
+    "name": "Copil Copac Draws Trees",
+    "rating": 1400
+  },
+  {
+    "contestId": 1671,
+    "index": "C",
+    "name": "Dolce Vita",
+    "rating": 1200
+  },
+  {
+    "contestId": 104011,
+    "index": "C",
+    "name": "Clean Up!",
+    "rating": null
+  },
+  {
+    "contestId": 104011,
+    "index": "B",
+    "name": "Boris and Berta",
+    "rating": null
+  },
+  {
+    "contestId": 104011,
+    "index": "H",
+    "name": "Halfway There",
+    "rating": null
+  },
+  {
+    "contestId": 2109,
+    "index": "C1",
+    "name": "Hacking Numbers (Easy Version)",
+    "rating": 1500
+  },
+  {
+    "contestId": 2074,
+    "index": "E",
+    "name": "Empty Triangle",
+    "rating": 1600
+  },
+  {
+    "contestId": 459,
+    "index": "D",
+    "name": "Pashmak and Parmida's problem",
+    "rating": 1800
+  },
+  {
+    "contestId": 1324,
+    "index": "E",
+    "name": "Sleeping Schedule",
+    "rating": 1700
+  },
+  {
+    "contestId": 1831,
+    "index": "C",
+    "name": "Copil Copac Draws Trees",
+    "rating": 1400
+  },
+  {
+    "contestId": 1904,
+    "index": "D2",
+    "name": "Set To Max (Hard Version)",
+    "rating": 1800
+  },
+  {
+    "contestId": 1272,
+    "index": "D",
+    "name": "Remove One Element",
+    "rating": 1500
+  },
+  {
+    "contestId": 1352,
+    "index": "F",
+    "name": "Binary String Reconstruction",
+    "rating": 1500
+  },
+  {
+    "contestId": 1921,
+    "index": "E",
+    "name": "Eat the Chip",
+    "rating": 1600
+  },
+  {
+    "contestId": 1812,
+    "index": "H",
+    "name": "Expected Twist",
+    "rating": null
+  },
+  {
+    "contestId": 2127,
+    "index": "D",
+    "name": "Root was Built by Love, Broken by Destiny",
+    "rating": 1800
+  },
+  {
+    "contestId": 1931,
+    "index": "E",
+    "name": "Anna and the Valentine's Day Gift",
+    "rating": 1400
+  },
+  {
+    "contestId": 2018,
+    "index": "C",
+    "name": "Tree Pruning",
+    "rating": 1700
+  },
+  {
+    "contestId": 2010,
+    "index": "C2",
+    "name": "Message Transmission Error (hard version)",
+    "rating": 1700
+  },
+  {
+    "contestId": 2117,
+    "index": "F",
+    "name": "Wildflower",
+    "rating": 1800
+  },
+  {
+    "contestId": 2120,
+    "index": "D",
+    "name": "Matrix game",
+    "rating": 1800
+  },
+  {
+    "contestId": 1703,
+    "index": "G",
+    "name": "Good Key, Bad Key",
+    "rating": 1600
+  },
+  {
+    "contestId": 2115,
+    "index": "A",
+    "name": "Gellyfish and Flaming Peony",
+    "rating": 1500
+  },
+  {
+    "contestId": 105911,
+    "index": "D",
+    "name": "Virtuous Pope",
+    "rating": null
+  },
+  {
+    "contestId": 105911,
+    "index": "M",
+    "name": "Divide coins",
+    "rating": null
+  },
+  {
+    "contestId": 1872,
+    "index": "E",
+    "name": "Data Structures Fan",
+    "rating": 1500
+  },
+  {
+    "contestId": 106016,
+    "index": "D",
+    "name": "Least Uncommon Divisor",
+    "rating": null
+  },
+  {
+    "contestId": 106016,
+    "index": "C",
+    "name": "USD vs Liras",
+    "rating": null
+  },
+  {
+    "contestId": 106016,
+    "index": "I",
+    "name": "W/S TREE",
+    "rating": null
+  },
+  {
+    "contestId": 2116,
+    "index": "B",
+    "name": "Gellyfish and Baby's Breath",
+    "rating": 1300
+  },
+  {
+    "contestId": 103821,
+    "index": "M",
+    "name": "Permutations Score",
+    "rating": null
+  },
+  {
+    "contestId": 104426,
+    "index": "K",
+    "name": "Divisibility",
+    "rating": null
+  },
+  {
+    "contestId": 104426,
+    "index": "E",
+    "name": "Stacked Pearls",
+    "rating": null
+  },
+  {
+    "contestId": 1389,
+    "index": "B",
+    "name": "Array Walk",
+    "rating": 1600
+  },
+  {
+    "contestId": 455,
+    "index": "A",
+    "name": "Boredom",
+    "rating": 1500
+  },
+  {
+    "contestId": 100551,
+    "index": "A",
+    "name": "Connect and Disconnect",
+    "rating": null
+  },
+  {
+    "contestId": 2130,
+    "index": "D",
+    "name": "Stay or Mirror",
+    "rating": 1600
+  },
+  {
+    "contestId": 1672,
+    "index": "D",
+    "name": "Cyclic Rotation",
+    "rating": 1700
+  },
+  {
+    "contestId": 566,
+    "index": "F",
+    "name": "Clique in the Divisibility Graph",
+    "rating": 1500
+  },
+  {
+    "contestId": 105484,
+    "index": "G",
+    "name": "Binary Tree",
+    "rating": null
+  },
+  {
+    "contestId": 105484,
+    "index": "K",
+    "name": "Strips",
+    "rating": null
+  },
+  {
+    "contestId": 105358,
+    "index": "E",
+    "name": "Escape",
+    "rating": null
+  },
+  {
+    "contestId": 1470,
+    "index": "A",
+    "name": "Strange Birthday Party",
+    "rating": 1300
+  },
+  {
+    "contestId": 1498,
+    "index": "B",
+    "name": "Box Fitting",
+    "rating": 1300
+  },
+  {
+    "contestId": 1703,
+    "index": "F",
+    "name": "Yet Another Problem About Pairs Satisfying an Inequality",
+    "rating": 1300
+  },
+  {
+    "contestId": 2142,
+    "index": "D",
+    "name": "Removal of Unattractive Pairs",
+    "rating": null
+  },
+  {
+    "contestId": 104832,
+    "index": "H",
+    "name": "Task Assignment to Two Employees",
+    "rating": null
+  },
+  {
+    "contestId": 104832,
+    "index": "I",
+    "name": "Liquid Distribution",
+    "rating": null
+  },
+  {
+    "contestId": 104832,
+    "index": "K",
+    "name": "Probing the Disk",
+    "rating": null
+  },
+  {
+    "contestId": 2143,
+    "index": "D1",
+    "name": "Inversion Graph Coloring (Easy Version)",
+    "rating": 1800
+  },
+  {
+    "contestId": 1143,
+    "index": "B",
+    "name": "Nirvana",
+    "rating": 1200
+  },
+  {
+    "contestId": 2114,
+    "index": "E",
+    "name": "Kirei Attacks the Estate",
+    "rating": 1400
+  },
+  {
+    "contestId": 1519,
+    "index": "C",
+    "name": "Berland Regional",
+    "rating": 1400
+  },
+  {
+    "contestId": 1837,
+    "index": "D",
+    "name": "Bracket Coloring",
+    "rating": 1400
+  },
+  {
+    "contestId": 1879,
+    "index": "C",
+    "name": "Make it Alternating",
+    "rating": 1300
+  },
+  {
+    "contestId": 950,
+    "index": "C",
+    "name": "Zebras",
+    "rating": 1600
+  },
+  {
+    "contestId": 2101,
+    "index": "A",
+    "name": "Mex in the Grid",
+    "rating": 1300
+  },
+  {
+    "contestId": 2146,
+    "index": "D1",
+    "name": "Max Sum OR (Easy Version)",
+    "rating": 1500
+  },
+  {
+    "contestId": 106072,
+    "index": "H",
+    "name": "Tree Shuffling",
+    "rating": null
+  },
+  {
+    "contestId": 1294,
+    "index": "C",
+    "name": "Product of Three Numbers",
+    "rating": 1300
+  },
+  {
+    "contestId": 126,
+    "index": "B",
+    "name": "Password",
+    "rating": 1700
+  },
+  {
+    "contestId": 2111,
+    "index": "D",
+    "name": "Creating a Schedule",
+    "rating": 1400
+  },
+  {
+    "contestId": 1526,
+    "index": "C2",
+    "name": "Potions (Hard Version)",
+    "rating": 1600
+  },
+  {
+    "contestId": 1572,
+    "index": "A",
+    "name": "Book",
+    "rating": 1800
+  },
+  {
+    "contestId": 2000,
+    "index": "D",
+    "name": "Right Left Wrong",
+    "rating": 1200
+  },
+  {
+    "contestId": 1915,
+    "index": "E",
+    "name": "Romantic Glasses",
+    "rating": 1300
+  },
+  {
+    "contestId": 1374,
+    "index": "D",
+    "name": "Zero Remainder Array",
+    "rating": 1400
+  },
+  {
+    "contestId": 1370,
+    "index": "C",
+    "name": "Number Game",
+    "rating": 1400
+  },
+  {
+    "contestId": 920,
+    "index": "C",
+    "name": "Swap Adjacent Elements",
+    "rating": 1400
+  },
+  {
+    "contestId": 1896,
+    "index": "C",
+    "name": "Matching Arrays",
+    "rating": 1400
+  },
+  {
+    "contestId": 104417,
+    "index": "B",
+    "name": "Building Company",
+    "rating": null
+  },
+  {
+    "contestId": 105911,
+    "index": "I",
+    "name": "Dating Day",
+    "rating": null
+  },
+  {
+    "contestId": 105924,
+    "index": "A",
+    "name": "GD \u7ec8\u6781\u8282\u594f\u5b9e\u9a8c\u5ba4",
+    "rating": null
+  },
+  {
+    "contestId": 105924,
+    "index": "K",
+    "name": "\u5fae\u4fe1\u5c0f\u6e38\u620f",
+    "rating": null
+  },
+  {
+    "contestId": 2129,
+    "index": "B",
+    "name": "Stay or Mirror",
+    "rating": 1600
+  },
+  {
+    "contestId": 2094,
+    "index": "F",
+    "name": "Trulimero Trulicina",
+    "rating": 1600
+  },
+  {
+    "contestId": 1973,
+    "index": "B",
+    "name": "Cat, Fox and the Lonely Array",
+    "rating": 1300
+  },
+  {
+    "contestId": 2112,
+    "index": "C",
+    "name": "Coloring Game",
+    "rating": 1300
+  },
+  {
+    "contestId": 2121,
+    "index": "D",
+    "name": "1709",
+    "rating": 1300
+  },
+  {
+    "contestId": 2121,
+    "index": "C",
+    "name": "Those Who Are With Us",
+    "rating": 1200
+  },
+  {
+    "contestId": 271,
+    "index": "D",
+    "name": "Good Substrings",
+    "rating": 1800
+  },
+  {
+    "contestId": 187,
+    "index": "B",
+    "name": "AlgoRace",
+    "rating": 1800
+  },
+  {
+    "contestId": 1625,
+    "index": "C",
+    "name": "Road Optimization",
+    "rating": 1700
+  },
+  {
+    "contestId": 1594,
+    "index": "D",
+    "name": "The Number of Imposters",
+    "rating": 1700
+  },
+  {
+    "contestId": 1731,
+    "index": "C",
+    "name": "Even Subarrays",
+    "rating": 1700
+  },
+  {
+    "contestId": 1497,
+    "index": "E1",
+    "name": "Square-Free Division (easy version)",
+    "rating": 1700
+  },
+  {
+    "contestId": 1693,
+    "index": "B",
+    "name": "Fake Plastic Trees",
+    "rating": 1700
+  },
+  {
+    "contestId": 1738,
+    "index": "C",
+    "name": "Even Number Addicts",
+    "rating": 1500
+  },
+  {
+    "contestId": 1985,
+    "index": "F",
+    "name": "Final Boss",
+    "rating": 1500
+  },
+  {
+    "contestId": 1924,
+    "index": "A",
+    "name": "Did We Get Everything Covered?",
+    "rating": 1500
+  },
+  {
+    "contestId": 1838,
+    "index": "C",
+    "name": "No Prime Differences",
+    "rating": 1400
+  },
+  {
+    "contestId": 1458,
+    "index": "A",
+    "name": "Row GCD",
+    "rating": 1600
+  },
+  {
+    "contestId": 1775,
+    "index": "B",
+    "name": "Gardener and the Array",
+    "rating": 1300
+  },
+  {
+    "contestId": 1794,
+    "index": "C",
+    "name": "Scoring Subsequences",
+    "rating": 1300
+  },
+  {
+    "contestId": 1886,
+    "index": "C",
+    "name": "Decreasing String",
+    "rating": 1600
+  },
+  {
+    "contestId": 812,
+    "index": "B",
+    "name": "Sagheer, the Hausmeister",
+    "rating": 1600
+  },
+  {
+    "contestId": 2120,
+    "index": "C",
+    "name": "Divine Tree",
+    "rating": 1400
+  },
+  {
+    "contestId": 2063,
+    "index": "C",
+    "name": "Remove Exactly Two",
+    "rating": 1600
+  },
+  {
+    "contestId": 1005,
+    "index": "D",
+    "name": "Polycarp and Div 3",
+    "rating": 1500
+  },
+  {
+    "contestId": 982,
+    "index": "C",
+    "name": "Cut 'em all!",
+    "rating": 1500
+  },
+  {
+    "contestId": 1338,
+    "index": "A",
+    "name": "Powered Addition",
+    "rating": 1500
+  },
+  {
+    "contestId": 1466,
+    "index": "D",
+    "name": "13th Labour of Heracles",
+    "rating": 1500
+  },
+  {
+    "contestId": 1336,
+    "index": "A",
+    "name": "Linova and Kingdom",
+    "rating": 1600
+  },
+  {
+    "contestId": 2134,
+    "index": "B",
+    "name": "Add 0 or K",
+    "rating": 1200
+  },
+  {
+    "contestId": 1302,
+    "index": "I",
+    "name": "Deja vu",
+    "rating": null
+  },
+  {
+    "contestId": 730,
+    "index": "B",
+    "name": "Minimum and Maximum",
+    "rating": 1800
+  },
+  {
+    "contestId": 960,
+    "index": "B",
+    "name": "Minimize the error",
+    "rating": 1500
+  },
+  {
+    "contestId": 2066,
+    "index": "A",
+    "name": "Object Identification",
+    "rating": 1400
+  },
+  {
+    "contestId": 105492,
+    "index": "B",
+    "name": "Buggy Blinkers",
+    "rating": null
+  },
+  {
+    "contestId": 105492,
+    "index": "F",
+    "name": "Failing Factory",
+    "rating": null
+  },
+  {
+    "contestId": 105492,
+    "index": "E",
+    "name": "Extraterrestrial Exploration",
+    "rating": null
+  },
+  {
+    "contestId": 612,
+    "index": "D",
+    "name": "The Union of k-Segments",
+    "rating": 1800
+  },
+  {
+    "contestId": 1061,
+    "index": "C",
+    "name": "Multiplicity",
+    "rating": 1700
+  },
+  {
+    "contestId": 1408,
+    "index": "B",
+    "name": "Arrays Sum",
+    "rating": 1400
+  },
+  {
+    "contestId": 2078,
+    "index": "C",
+    "name": "Breach of Faith",
+    "rating": 1500
+  },
+  {
+    "contestId": 2043,
+    "index": "C",
+    "name": "Sums on Segments",
+    "rating": 1600
+  },
+  {
+    "contestId": 2089,
+    "index": "A",
+    "name": "Simple Permutation",
+    "rating": 1700
+  },
+  {
+    "contestId": 1868,
+    "index": "B1",
+    "name": "Candy Party (Easy Version)",
+    "rating": 1700
+  },
+  {
+    "contestId": 2014,
+    "index": "E",
+    "name": "Rendez-vous de Marian et Robin",
+    "rating": 1800
+  },
+  {
+    "contestId": 1695,
+    "index": "C",
+    "name": "Zero Path",
+    "rating": 1700
+  },
+  {
+    "contestId": 105459,
+    "index": "B",
+    "name": "Concave Hull",
+    "rating": null
+  },
+  {
+    "contestId": 105578,
+    "index": "B",
+    "name": "Magical Palette",
+    "rating": null
+  },
+  {
+    "contestId": 105578,
+    "index": "M",
+    "name": "Obliviate, Then Reincarnate",
+    "rating": null
+  },
+  {
+    "contestId": 105053,
+    "index": "F",
+    "name": "Fair Distribution",
+    "rating": null
+  },
+  {
+    "contestId": 1151,
+    "index": "B",
+    "name": "Dima and a Bad XOR",
+    "rating": 1600
+  },
+  {
+    "contestId": 1968,
+    "index": "E",
+    "name": "Cells Arrangement",
+    "rating": 1600
+  },
+  {
+    "contestId": 1415,
+    "index": "C",
+    "name": "Bouncing Ball",
+    "rating": 1400
+  },
+  {
+    "contestId": 1765,
+    "index": "K",
+    "name": "Torus Path",
+    "rating": 1500
+  },
+  {
+    "contestId": 300,
+    "index": "B",
+    "name": "Coach",
+    "rating": 1500
+  },
+  {
+    "contestId": 2151,
+    "index": "B",
+    "name": "Incremental Path",
+    "rating": 1300
+  },
+  {
+    "contestId": 105321,
+    "index": "J",
+    "name": "Never Add Up to X",
+    "rating": null
+  },
+  {
+    "contestId": 1249,
+    "index": "C2",
+    "name": "Good Numbers (hard version)",
+    "rating": 1500
+  },
+  {
+    "contestId": 457,
+    "index": "A",
+    "name": "Golden System",
+    "rating": 1700
+  },
+  {
+    "contestId": 845,
+    "index": "C",
+    "name": "Two TVs",
+    "rating": 1500
+  },
+  {
+    "contestId": 276,
+    "index": "C",
+    "name": "Little Girl and Maximum Sum",
+    "rating": 1500
+  },
+  {
+    "contestId": 580,
+    "index": "C",
+    "name": "Kefa and Park",
+    "rating": 1500
+  },
+  {
+    "contestId": 269,
+    "index": "B",
+    "name": "Greenhouse Effect",
+    "rating": 1700
+  },
+  {
+    "contestId": 189,
+    "index": "A",
+    "name": "Cut Ribbon",
+    "rating": 1300
+  },
+  {
+    "contestId": 489,
+    "index": "C",
+    "name": "Given Length and Sum of Digits...",
+    "rating": 1400
+  },
+  {
+    "contestId": 451,
+    "index": "B",
+    "name": "Sort the Array",
+    "rating": 1300
+  },
+  {
+    "contestId": 2117,
+    "index": "D",
+    "name": "Retaliation",
+    "rating": 1200
+  },
+  {
+    "contestId": 546,
+    "index": "D",
+    "name": "Soldier and Number Game",
+    "rating": 1700
+  },
+  {
+    "contestId": 735,
+    "index": "D",
+    "name": "Taxes",
+    "rating": 1600
+  },
+  {
+    "contestId": 264,
+    "index": "B",
+    "name": "Good Sequences",
+    "rating": 1500
+  },
+  {
+    "contestId": 287,
+    "index": "B",
+    "name": "Pipeline",
+    "rating": 1700
+  },
+  {
+    "contestId": 104375,
+    "index": "J",
+    "name": "Jumping Reaction",
+    "rating": null
+  }
+]

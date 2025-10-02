@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import hashlib
 import random
 import os
@@ -8,12 +7,10 @@ import time
 from typing import Dict, List, Optional
 from omegaconf import DictConfig
 
-load_dotenv()
-
 class CodeforcesAPI:
     def __init__(self, cfg: DictConfig):
-        self.api_key = os.getenv('KEY')
-        self.api_secret = os.getenv('SECRET')
+        self.api_key = cfg.codeforces.key
+        self.api_secret = cfg.codeforces.secret
         self.base_url = cfg.api.base_url
         self.contest_cache = {}
         

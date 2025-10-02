@@ -65,7 +65,7 @@ def analyze_submissions(submissions: List[Dict], api: CodeforcesAPI, cfg: DictCo
                 if contest_info and problem_index in contest_info['problems']:
                     problem_rating = contest_info['problems'][problem_index].get('rating')
                     
-                    if problem_rating is None or problem_rating <= cfg.analysis.max_rating_threshold:
+                    if problem_rating is None or cfg.analysis.min_rating_threshold <= problem_rating <= cfg.analysis.max_rating_threshold:
                         suspicious_problems[problem_key] = {
                             'problem_name': problem_info.get('name', 'Unknown'),
                             'contest_id': contest_id,
@@ -84,7 +84,7 @@ def analyze_submissions(submissions: List[Dict], api: CodeforcesAPI, cfg: DictCo
                             print(f"    Added suspicious problem: {problem_info.get('name')} (rating: {problem_rating})")
                     else:
                         if cfg.processing.enable_debug:
-                            print(f"    Skipped problem {problem_info.get('name')} - rating {problem_rating} > {cfg.analysis.max_rating_threshold}")
+                            print(f"    Skipped problem {problem_info.get('name')} - rating {problem_rating} outside range")
                 else:
                     if cfg.processing.enable_debug:
                         print(f"    Could not get rating for problem {problem_key}")
@@ -92,9 +92,8 @@ def analyze_submissions(submissions: List[Dict], api: CodeforcesAPI, cfg: DictCo
     
     return suspicious_problems
 
-@hydra.main(version_base=None, config_path=".", config_name="config")
+@hydra.main(version_base="1.3", config_path=".", config_name="config")
 def main(cfg: DictConfig):
-    # Load user list with optional limit for testing
     all_users = load_user_list(cfg.files.user_list)
     user_list = all_users[cfg.processing.users_l:cfg.processing.users_r] if cfg.processing.users_r else all_users
     
@@ -134,18 +133,17 @@ def main(cfg: DictConfig):
         else:
             print(f"  No submissions found for {username}")
         
-        # Rate limiting
+        # rate limiting
         if (i + 1) % cfg.api.batch_size == 0:
             print(f"Processed {i+1} users, sleeping for {cfg.api.batch_delay} seconds...")
             time.sleep(cfg.api.batch_delay)
         else:
             time.sleep(cfg.api.delay_between_requests)
     
-    # Save all results
     with open(cfg.files.output_all, 'w') as f:
         json.dump(all_suspicious_users, f, indent=2)
 
-    # Create a simplified list of unique problems for the filtered output
+    # list of unique problems
     unique_problems = {}
     for username, data in all_suspicious_users.items():
         for problem_key, problem_data in data['suspicious_problems'].items():
@@ -157,11 +155,9 @@ def main(cfg: DictConfig):
                     'rating': problem_data['problem_rating']
                 }
 
-    # Save the simplified list of problems
     with open(cfg.files.output_filtered, 'w') as f:
         json.dump(list(unique_problems.values()), f, indent=2)
 
-    # Print analysis summary
     print(f"\nANALYSIS COMPLETE")
     print(f"Total users analyzed: {len(user_list)}")
     print(f"Users with suspicious patterns (all): {len(all_suspicious_users)}")
