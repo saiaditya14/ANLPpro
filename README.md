@@ -9,3 +9,18 @@ Also 2123 D is interesting because it only matches outputs upto samples that wer
 
 Also CoT indicates a lot of basis on previous seen problems for gpt
 Should ask about what to do regarding Binary String Game chat in chatgpt
+
+
+https://chatgpt.com/share/68de1d2f-85bc-800d-817f-0dfdc1f0b7a2
+https://chatgpt.com/share/68de1d95-7b30-800d-86b3-a5994c8cdb76
+https://chatgpt.com/share/68de1da8-c064-800d-9108-99192205b8ac
+https://chatgpt.com/share/68de1db9-ed38-800d-9062-615e1a054237
+https://chatgpt.com/share/68de1dc9-2774-800d-a8a3-21ee01b20823
+https://chatgpt.com/share/68de1ddc-c4c8-800d-9a6a-540d073d95fc
+https://chatgpt.com/share/68de1def-f1ec-800d-a63e-0a755a074d5d
+https://chatgpt.com/share/68de1dfe-941c-800d-a6a9-ba819feab8a0
+https://chatgpt.com/share/68de1e0f-23f0-800d-bf8c-c7339e0a7d0f
+https://chatgpt.com/share/68de1e22-2ac4-800d-a48f-c63f211b86b3
+https://chatgpt.com/share/68de1e30-4d84-800d-88d0-88461deed982
+https://chatgpt.com/share/68de1e43-3120-800d-99ea-f8b1bbf0da57
+https://chatgpt.com/share/68de1e53-1984-800d-a834-0cc2d447e05d
