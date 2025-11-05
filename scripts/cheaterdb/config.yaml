@@ -11,8 +11,8 @@ analysis:
   max_rating_threshold: 1800 
 
 processing:
-  users_l: 200
-  users_r: 700
+  users_l: 700
+  users_r: 2400
   enable_debug: true
 
 files:
