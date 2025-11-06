@@ -11,23 +11,28 @@ analysis:
   max_rating_threshold: 1800 
 
 processing:
-  users_l: 700
+  users_l: 0
   users_r: 2400
   enable_debug: true
 
 files:
-  user_list: "scripts/cheaterdb/list.json"
+  user_list: "list.json"
   output_all: 
-    "scripts/cheaterdb/suspicious_users_${processing.users_l}-${processing.users_r}.json"
+    "suspicious_users_${processing.users_l}-${processing.users_r}.json"
   output_filtered: 
-    "scripts/cheaterdb/filtered_problems_${processing.users_l}-${processing.users_r}.json"
+    "filtered_problems_${processing.users_l}-${processing.users_r}.json"
 
 codeforces:
   cookies: ${oc.env:COOKIES}
-  program_type_id: 73 # GNU G++20 11.2.0 (64 bit, MSYS2)
+  program_type_id: 91 # GNU G++23 14.2.0 (64 bit, MSYS2)
   key: ${oc.env:KEY}
   secret: ${oc.env:SECRET}
+  tta: "936" # _tta value for form submission
+  adcd1e: "caf4fqweaefgca" # adcd1e parameter for submit URL
 
 gemini:
-  api_key: ${oc.env:GEMINI_API_KEY}
+  api_keys: ${oc.env:GEMINI_API_KEYS}  # Comma-separated API keys
+  model_name: "gemini-2.5-pro"
   prompt: "Solve this in C++:\n\n"
+  modulus: 0  # Which process this is (0 to processes-1)
+  processes: 2  # Total number of parallel processes

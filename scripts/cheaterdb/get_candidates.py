@@ -3,11 +3,15 @@ import time
 from datetime import datetime, timedelta
 import hydra
 from omegaconf import DictConfig
+from dotenv import load_dotenv
+
 
 from typing import Dict, List, Set, Optional
 from collections import defaultdict, Counter
 
 from cf_api import CodeforcesAPI
+
+load_dotenv()
 
 def load_user_list(file_path: str) -> List[str]:
     try:
