@@ -15,11 +15,37 @@ import hydra
 from omegaconf import DictConfig
 import google.generativeai as genai
 import re
+import os
+import random
 from typing import Dict, List, Tuple
 from problems import get_problem_statement, parse_problem_statement, extract_code, get_api_keys
 
 # Global variable to track current API key index
 current_api_key_index = 0
+
+
+def acquire_lock(lock_file):
+    """Acquire a lock using a lock file."""
+    while True:
+        try:
+            # Attempt to create the lock file exclusively
+            fd = os.open(lock_file, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.close(fd)
+            return
+        except FileExistsError:
+            # Lock is held by another process, wait and retry
+            time.sleep(random.uniform(0.1, 0.5))
+
+def release_lock(lock_file):
+    """Release the lock by deleting the lock file."""
+    try:
+        os.remove(lock_file)
+    except OSError as e:
+        # Log if the lock file doesn't exist, but don't crash
+        print(f"Warning: Could not release lock {lock_file}. Reason: {e}")
+    except OSError:
+        pass
+
 
 
 def remove_sample_cases(problem_statement: str) -> str:
@@ -157,8 +183,12 @@ def main(cfg: DictConfig):
     with open(submissions_file, 'r') as f:
         submissions = json.load(f)
     
-    # Filter non-OK submissions
-    failed_problems = [s for s in submissions if s['verdict'] != 'OK']
+    # Filter non-OK submissions, excluding specified problems
+    EXCLUDE_PROBLEMS = {"2078D", "1805D", "222C", "2135B", "2032D", "1734D", "48C", "2123F"}
+    failed_problems = [
+        s for s in submissions 
+        if s['verdict'] != 'OK' and f"{s['contestId']}{s['index']}" not in EXCLUDE_PROBLEMS
+    ]
     failed_problems.sort(key=lambda x: (x.get('rating', 0), x.get('contestId', 0)), reverse=True)
     
     # Filter problems based on modulus for parallel processing
@@ -270,10 +300,30 @@ def main(cfg: DictConfig):
         
         results.append(problem_result)
         
-        # Save incrementally
+        # --- Safe concurrent file writing ---
         output_file = f"solution_variations_{user_handle}.json"
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
+        lock_file = f"{output_file}.lock"
+        
+        acquire_lock(lock_file)
+        try:
+            # Read existing data
+            if os.path.exists(output_file):
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    try:
+                        existing_data = json.load(f)
+                    except json.JSONDecodeError:
+                        existing_data = []
+            else:
+                existing_data = []
+            
+            # Append new result
+            existing_data.append(problem_result)
+            
+            # Write back to file
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(existing_data, f, indent=2, ensure_ascii=False)
+        finally:
+            release_lock(lock_file)
         
         print(f"\n✓ Completed {contest_id}{index}, saved to {output_file}")
     
