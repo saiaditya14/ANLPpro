@@ -1,0 +1,22 @@
+- problem: 2148F
+  results: without samples, passed@2
+
+- problem: 2155D
+  results: failed without samples, failed@2 with samples (idleness limit exceeded)
+
+- problem: 2145D
+  results: passed@1 without samples
+
+- problem: 2144D
+  results: passed@1 without samples
+
+- problem: 2143D1
+  results: failed without samples, passed@1 with samples
+
+- problem: 2139E1
+  results: failed without samples, failed@2 with samples (WA on test case 1)
+
+- problem: 2138C1
+  results: failed without samples, failed@2 with samples (MLE on TC 34)
+
+

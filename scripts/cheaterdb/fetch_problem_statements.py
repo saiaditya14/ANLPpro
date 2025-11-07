@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Fetch problem statements from filtered_problems_0-2400.json and save to YAML.
-Each entry contains: contestId, index, rating, problem_statement
-"""
-
 import json
 import yaml
 import time
