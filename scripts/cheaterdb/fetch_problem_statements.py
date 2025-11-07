@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Fetch problem statements from filtered problems and save to YAML.
+Fetch problem statements from filtered_problems_0-2400.json and save to YAML.
+Each entry contains: contestId, index, rating, problem_statement
 """
 
 import json
@@ -11,66 +12,33 @@ from omegaconf import DictConfig
 from problems import get_problem_statement, parse_problem_statement
 
 
-def load_problems_and_submissions(cfg: DictConfig):
-    """Load problems from filtered JSON and user submissions."""
-    problems_file = cfg.files.output_filtered
-    with open(problems_file, 'r') as f:
-        all_problems = json.load(f)
-    
-    user_handle = cfg.user_handle
-    submissions_file = f"user_submissions_{user_handle}.json"
-    try:
-        with open(submissions_file, 'r') as f:
-            user_submissions = json.load(f)
-    except FileNotFoundError:
-        print(f"Warning: {submissions_file} not found. Will process all problems.")
-        user_submissions = []
-    
-    submitted = {(s['contestId'], s['index']) for s in user_submissions}
-    
-    min_rating = cfg.analysis.min_rating_threshold
-    max_rating = cfg.analysis.max_rating_threshold
-    
-    unsubmitted_problems = []
-    for problem in all_problems:
-        contest_id = problem['contestId']
-        index = problem['index']
-        rating = problem.get('rating', 0)
-        
-        if (contest_id, index) in submitted:
-            continue
-        
-        if rating != 0 and (rating < min_rating or rating > max_rating):
-            continue
-        
-        unsubmitted_problems.append(problem)
-    
-    return unsubmitted_problems
-
-
 @hydra.main(config_path=".", config_name="config", version_base=None)
 def main(cfg: DictConfig):
-    problems = load_problems_and_submissions(cfg)
+    # Load problems from output_filtered file
+    problems_file = cfg.files.output_filtered
+    print(f"Loading problems from {problems_file}...")
     
-    print(f"Loading {len(problems)} problems...")
-    print(f"Rating range: {cfg.analysis.min_rating_threshold}-{cfg.analysis.max_rating_threshold}")
+    with open(problems_file, 'r') as f:
+        problems = json.load(f)
     
-    print(f"Fetching {len(problems)} problems")
+    problems = [p for p in problems if p.get('rating', 0) == 1800]
+
+    print(f"Found {len(problems)} problems to fetch")
     
     problem_statements = []
     
-    for idx, problem_info in enumerate(problems):
+    for idx, problem_info in enumerate(problems, 1):
         contest_id = problem_info['contestId']
         problem_index = problem_info['index']
         rating = problem_info.get('rating', 0)
         
-        print(f"\n[{idx+1}/{len(problems)}] Fetching {contest_id}{problem_index} (Rating: {rating})")
+        print(f"\n[{idx}/{len(problems)}] Fetching {contest_id}{problem_index} (Rating: {rating})")
         
         try:
             html_content = get_problem_statement(contest_id, problem_index, cfg.codeforces.cookies)
             statement = parse_problem_statement(html_content)
             
-            if statement:
+            if statement and statement != "Problem statement not found.":
                 problem_data = {
                     'contestId': contest_id,
                     'index': problem_index,
@@ -85,15 +53,16 @@ def main(cfg: DictConfig):
         except Exception as e:
             print(f"✗ Error fetching {contest_id}{problem_index}: {e}")
         
-        # Rate limit: 2 requests per second (0.5 second delay between requests)
-        time.sleep(0.5)
+        # Rate limit: 1 requests per second
+        time.sleep(1)
     
-    output_file = f"problem_statements.yaml"
+    # Save to YAML
+    output_file = "problem_statements.yaml"
     with open(output_file, 'w', encoding='utf-8') as f:
         yaml.dump(problem_statements, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
     
     print(f"\n{'='*60}")
-    print(f"Saved {len(problem_statements)} problem statements to {output_file}")
+    print(f"Successfully saved {len(problem_statements)}/{len(problems)} problem statements to {output_file}")
     print(f"{'='*60}")
 
 
