@@ -7,7 +7,7 @@ api:
 analysis:
   days_to_analyze: 90
   max_problematic_threshold: 3
-  min_rating_threshold: 1200
+  min_rating_threshold: 1800
   max_rating_threshold: 1800 
 
 processing:
@@ -28,11 +28,13 @@ codeforces:
   key: ${oc.env:KEY}
   secret: ${oc.env:SECRET}
   tta: "936" # _tta value for form submission
-  adcd1e: "caf4fqweaefgca" # adcd1e parameter for submit URL
+  adcd1e: "caf4fvvldo2aa9" # adcd1e parameter for submit URL
+
+user_handle: "anlp_proj"  # Set the Codeforces handle to fetch submissions for
 
 gemini:
   api_keys: ${oc.env:GEMINI_API_KEYS}  # Comma-separated API keys
-  model_name: "gemini-2.5-pro"
+  model_name: "gemini-2.5-flash"
   prompt: "Solve this in C++:\n\n"
   modulus: 0  # Which process this is (0 to processes-1)
-  processes: 2  # Total number of parallel processes
+  processes: 5  # Total number of parallel processes

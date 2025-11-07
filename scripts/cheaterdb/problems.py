@@ -28,20 +28,28 @@ def get_problem_statement(contest_id, problem_index, cookie=""):
         }
     )
     
+    # Headers adapted from the provided curl request
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:144.0) Gecko/20100101 Firefox/144.0',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-        'Referer': 'https://codeforces.com/problemset',
-        'Sec-GPC': '1',
-        'Upgrade-Insecure-Requests': '1',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-Fetch-User': '?1',
-        'Connection': 'keep-alive',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+        'referer': 'https://codeforces.com/problemset',
+        'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+        'sec-ch-ua-arch': '"arm"',
+        'sec-ch-ua-bitness': '"64"',
+        'sec-ch-ua-full-version': '"140.0.7339.215"',
+        'sec-ch-ua-full-version-list': '"Chromium";v="140.0.7339.215", "Not=A?Brand";v="24.0.0.0", "Google Chrome";v="140.0.7339.215"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-model': '""',
+        'sec-ch-ua-platform': '"macOS"',
+        'sec-ch-ua-platform-version': '"15.6.1"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+        'priority': 'u=0, i',
         'Cookie': cookie,
-        'Priority': 'u=0, i',
     }
 
     try:
@@ -76,19 +84,21 @@ def get_submission_details(scraper, contest_id, index, cookie=""):
     submit_page_url = f"https://codeforces.com/problemset/submit"
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:144.0) Gecko/20100101 Firefox/144.0',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-        'Sec-GPC': '1',
-        'Upgrade-Insecure-Requests': '1',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'none',
-        'Sec-Fetch-User': '?1',
-        'Connection': 'keep-alive',
-        'Cookie': cookie,
-        'Priority': 'u=0, i',
-        'TE': 'trailers',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+        'referer': 'https://codeforces.com/problemset/submit',
+        'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+        'sec-ch-ua-platform': '"macOS"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'none',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+        'connection': 'keep-alive',
+        'cookie': cookie,
+        'priority': 'u=0, i',
+        'te': 'trailers',
     }
 
     try:
@@ -140,23 +150,22 @@ def submit_solution(scraper, contest_id, problem_index, code, csrf_token, ftaa, 
     }
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:144.0) Gecko/20100101 Firefox/144.0',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-        # 'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Referer': 'https://codeforces.com/problemset/submit',
-        'Origin': 'https://codeforces.com',
-        'Sec-GPC': '1',
-        'Upgrade-Insecure-Requests': '1',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-Fetch-User': '?1',
-        'Connection': 'keep-alive',
-        'Cookie': cfg.codeforces.cookies,
-        'Priority': 'u=0, i',
-        'TE': 'trailers',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+        'content-type': 'application/x-www-form-urlencoded',
+        'referer': 'https://codeforces.com/problemset/submit',
+        'origin': 'https://codeforces.com',
+        'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+        'connection': 'keep-alive',
+        'cookie': cfg.codeforces.cookies,
+        'priority': 'u=0, i',
+        'te': 'trailers',
     }
 
     try:
@@ -237,7 +246,7 @@ def main(cfg: DictConfig):
     # Filter problems based on modulus for parallel processing
     modulus = cfg.gemini.modulus
     processes = cfg.gemini.processes
-    filtered_problems = [p for i, p in enumerate(filtered_problems[8:]) if i % processes == modulus]
+    filtered_problems = [p for i, p in enumerate(filtered_problems[8:]) if i % processes == modulus and p.get('rating', 0) == 1400]
     
     print(f"Process {modulus}/{processes}: Processing {len(filtered_problems)} problems")
     
@@ -276,8 +285,8 @@ def main(cfg: DictConfig):
         else:
             print(f"Could not fetch problem statement for {contest_id}{problem_index}")
         
-        # be polite to the server
-        time.sleep(1)
+        # Rate limit: 2 requests per second (0.5 second delay between requests)
+        time.sleep(0.5)
 
 if __name__ == "__main__":
     main()
