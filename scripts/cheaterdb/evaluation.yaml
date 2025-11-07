@@ -1,0 +1,5 @@
+- problem: 2078D
+  results: failed all metrics; only passed tc1 in the last semantic perturbed variation (MLE at tc 3)
+
+- problem: 1805D
+  results: failed@3, passed without samples, failed with fudged samples, failed with all semantic perturbed samples

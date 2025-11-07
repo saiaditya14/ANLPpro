@@ -244,21 +244,29 @@ def main(cfg: DictConfig):
             'solutions': {}
         }
         
-        # 1. Pass@5 - Generate 5 solutions with failure context
-        print(f"\n1. Generating pass@5 solutions...")
-        pass_at_5 = []
+        # 1. Pass@3 - Generate 3 solutions with failure context
+        print(f"\n1. Generating pass@3 solutions...")
+        pass_at_3 = []
+        previous_code = ""
         for i in range(3):
-            context = f"Previous attempt {i} failed. Try a different approach." if i > 0 else ""
-            print(f"   Generating solution {i+1}/5...")
+            context = ""
+            if i > 0 and previous_code:
+                context = f"Your previous solution failed. Here is the code you generated:\n\n```cpp\n{previous_code}\n```\n\nPlease analyze it and provide a different, corrected solution."
+            elif i > 0:
+                context = f"Previous attempt {i} failed. Try a different approach."
+
+            print(f"   Generating solution {i+1}/3...")
             solution = generate_solution_with_context(statement, cfg, context)
             code = extract_code(solution)
-            pass_at_5.append({
+            previous_code = code  # Save the generated code for the next iteration
+            
+            pass_at_3.append({
                 'attempt': i + 1,
                 'full_response': solution,
                 'code': code
             })
             time.sleep(0.5)
-        problem_result['solutions']['pass_at_5'] = pass_at_5
+        problem_result['solutions']['pass_at_3'] = pass_at_3
         
         # 2. Without sample cases
         print(f"\n2. Generating solution without sample cases...")

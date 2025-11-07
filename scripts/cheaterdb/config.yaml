@@ -37,4 +37,4 @@ gemini:
   model_name: "gemini-2.5-flash"
   prompt: "Solve this in C++:\n\n"
   modulus: 0  # Which process this is (0 to processes-1)
-  processes: 5  # Total number of parallel processes
+  processes: 10  # Total number of parallel processes
