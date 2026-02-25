@@ -1,0 +1,19 @@
+Problem: Having Been a Treasurer in the Past, I Help Goblins Deceive
+Contest: Codeforces Round 1006 (Div. 3) (id=2072)
+URL: https://codeforces.com/contest/2072/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2072,
+  "index": "B",
+  "name": "Having Been a Treasurer in the Past, I Help Goblins Deceive",
+  "type": "PROGRAMMING",
+  "rating": 900,
+  "tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "strings"
+  ]
+}
+
+Instruction: Solve.

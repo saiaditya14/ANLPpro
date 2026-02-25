@@ -1,0 +1,21 @@
+Problem: Palindrome Shuffle
+Contest: Educational Codeforces Round 174 (Rated for Div. 2) (id=2069)
+URL: https://codeforces.com/contest/2069/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2069,
+  "index": "D",
+  "name": "Palindrome Shuffle",
+  "type": "PROGRAMMING",
+  "rating": 1800,
+  "tags": [
+    "binary search",
+    "greedy",
+    "hashing",
+    "strings",
+    "two pointers"
+  ]
+}
+
+Instruction: Solve.

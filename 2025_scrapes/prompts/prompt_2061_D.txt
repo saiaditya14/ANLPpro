@@ -1,0 +1,19 @@
+Problem: Kevin and Numbers
+Contest: IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2) (id=2061)
+URL: https://codeforces.com/contest/2061/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2061,
+  "index": "D",
+  "name": "Kevin and Numbers",
+  "type": "PROGRAMMING",
+  "points": 1500.0,
+  "rating": 1600,
+  "tags": [
+    "bitmasks",
+    "data structures"
+  ]
+}
+
+Instruction: Solve.

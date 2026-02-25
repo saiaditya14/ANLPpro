@@ -1,0 +1,21 @@
+Problem: Skibidus and Slay
+Contest: Codeforces Round 1003 (Div. 4) (id=2065)
+URL: https://codeforces.com/contest/2065/problem/F
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2065,
+  "index": "F",
+  "name": "Skibidus and Slay",
+  "type": "PROGRAMMING",
+  "rating": 1700,
+  "tags": [
+    "data structures",
+    "dfs and similar",
+    "graphs",
+    "greedy",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

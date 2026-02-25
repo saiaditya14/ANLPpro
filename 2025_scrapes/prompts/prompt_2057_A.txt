@@ -1,0 +1,19 @@
+Problem: MEX Table
+Contest: Hello 2025 (id=2057)
+URL: https://codeforces.com/contest/2057/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2057,
+  "index": "A",
+  "name": "MEX Table",
+  "type": "PROGRAMMING",
+  "points": 500.0,
+  "rating": 800,
+  "tags": [
+    "constructive algorithms",
+    "math"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,23 @@
+Problem: The Game (Easy Version)
+Contest: Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2) (id=2062)
+URL: https://codeforces.com/contest/2062/problem/E1
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2062,
+  "index": "E1",
+  "name": "The Game (Easy Version)",
+  "type": "PROGRAMMING",
+  "points": 1500.0,
+  "rating": 2000,
+  "tags": [
+    "data structures",
+    "dfs and similar",
+    "games",
+    "graphs",
+    "greedy",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

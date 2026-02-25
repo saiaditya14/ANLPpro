@@ -1,0 +1,18 @@
+Problem: Was there an Array?
+Contest: Educational Codeforces Round 174 (Rated for Div. 2) (id=2069)
+URL: https://codeforces.com/contest/2069/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2069,
+  "index": "A",
+  "name": "Was there an Array?",
+  "type": "PROGRAMMING",
+  "rating": 800,
+  "tags": [
+    "graph matchings",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

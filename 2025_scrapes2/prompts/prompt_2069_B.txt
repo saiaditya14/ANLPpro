@@ -1,0 +1,18 @@
+Problem: Set of Strangers
+Contest: Educational Codeforces Round 174 (Rated for Div. 2) (id=2069)
+URL: https://codeforces.com/contest/2069/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2069,
+  "index": "B",
+  "name": "Set of Strangers",
+  "type": "PROGRAMMING",
+  "rating": 1200,
+  "tags": [
+    "greedy",
+    "matrices"
+  ]
+}
+
+Instruction: Solve.

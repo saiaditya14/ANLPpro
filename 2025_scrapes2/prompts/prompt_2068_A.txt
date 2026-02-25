@@ -1,0 +1,20 @@
+Problem: Condorcet Elections
+Contest: European Championship 2025 - Online Mirror (Unrated, ICPC Rules, Teams Preferred) (id=2068)
+URL: https://codeforces.com/contest/2068/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2068,
+  "index": "A",
+  "name": "Condorcet Elections",
+  "type": "PROGRAMMING",
+  "rating": 2300,
+  "tags": [
+    "constructive algorithms",
+    "graphs",
+    "greedy",
+    "probabilities"
+  ]
+}
+
+Instruction: Solve.

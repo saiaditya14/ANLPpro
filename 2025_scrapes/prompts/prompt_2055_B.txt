@@ -1,0 +1,20 @@
+Problem: Crafting
+Contest: Codeforces Round 996 (Div. 2) (id=2055)
+URL: https://codeforces.com/contest/2055/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2055,
+  "index": "B",
+  "name": "Crafting",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1000,
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

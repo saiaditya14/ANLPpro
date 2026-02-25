@@ -1,0 +1,21 @@
+Problem: Cost of the Array
+Contest: Codeforces Round 1002 (Div. 2) (id=2059)
+URL: https://codeforces.com/contest/2059/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2059,
+  "index": "B",
+  "name": "Cost of the Array",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1300,
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ]
+}
+
+Instruction: Solve.

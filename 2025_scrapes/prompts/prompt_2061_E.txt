@@ -1,0 +1,23 @@
+Problem: Kevin and And
+Contest: IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2) (id=2061)
+URL: https://codeforces.com/contest/2061/problem/E
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2061,
+  "index": "E",
+  "name": "Kevin and And",
+  "type": "PROGRAMMING",
+  "points": 2000.0,
+  "rating": 2000,
+  "tags": [
+    "bitmasks",
+    "brute force",
+    "dp",
+    "greedy",
+    "math",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

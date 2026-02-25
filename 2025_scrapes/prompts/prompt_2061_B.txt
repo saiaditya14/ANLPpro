@@ -1,0 +1,19 @@
+Problem: Kevin and Geometry
+Contest: IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2) (id=2061)
+URL: https://codeforces.com/contest/2061/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2061,
+  "index": "B",
+  "name": "Kevin and Geometry",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1100,
+  "tags": [
+    "binary search",
+    "geometry"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,18 @@
+Problem: Skibidus and Fanum Tax (hard version)
+Contest: Codeforces Round 1003 (Div. 4) (id=2065)
+URL: https://codeforces.com/contest/2065/problem/C2
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2065,
+  "index": "C2",
+  "name": "Skibidus and Fanum Tax (hard version)",
+  "type": "PROGRAMMING",
+  "rating": 1300,
+  "tags": [
+    "binary search",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,19 @@
+Problem: Ads
+Contest: European Championship 2025 - Online Mirror (Unrated, ICPC Rules, Teams Preferred) (id=2068)
+URL: https://codeforces.com/contest/2068/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2068,
+  "index": "C",
+  "name": "Ads",
+  "type": "PROGRAMMING",
+  "rating": 2100,
+  "tags": [
+    "binary search",
+    "greedy",
+    "two pointers"
+  ]
+}
+
+Instruction: Solve.

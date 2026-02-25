@@ -1,0 +1,22 @@
+Problem: Game with Binary String
+Contest: Educational Codeforces Round 175 (Rated for Div. 2) (id=2070)
+URL: https://codeforces.com/contest/2070/problem/E
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2070,
+  "index": "E",
+  "name": "Game with Binary String",
+  "type": "PROGRAMMING",
+  "rating": 2200,
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "divide and conquer",
+    "games",
+    "greedy",
+    "math"
+  ]
+}
+
+Instruction: Solve.

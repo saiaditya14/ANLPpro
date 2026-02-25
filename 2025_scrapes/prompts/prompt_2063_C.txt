@@ -1,0 +1,25 @@
+Problem: Remove Exactly Two
+Contest: Codeforces Round 1000 (Div. 2) (id=2063)
+URL: https://codeforces.com/contest/2063/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2063,
+  "index": "C",
+  "name": "Remove Exactly Two",
+  "type": "PROGRAMMING",
+  "points": 1500.0,
+  "rating": 1600,
+  "tags": [
+    "brute force",
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy",
+    "sortings",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

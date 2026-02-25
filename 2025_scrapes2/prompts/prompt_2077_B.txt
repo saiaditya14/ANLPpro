@@ -1,0 +1,22 @@
+Problem: Finding OR Sum
+Contest: Codeforces Round 1008 (Div. 1) (id=2077)
+URL: https://codeforces.com/contest/2077/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2077,
+  "index": "B",
+  "name": "Finding OR Sum",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1900,
+  "tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "implementation",
+    "interactive",
+    "math"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,24 @@
+Problem: Trapmigiano Reggiano
+Contest: Codeforces Round 1007 (Div. 2) (id=2071)
+URL: https://codeforces.com/contest/2071/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2071,
+  "index": "C",
+  "name": "Trapmigiano Reggiano",
+  "type": "PROGRAMMING",
+  "points": 1500.0,
+  "rating": 1700,
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "sortings",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

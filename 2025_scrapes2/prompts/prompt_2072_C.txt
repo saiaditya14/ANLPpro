@@ -1,0 +1,19 @@
+Problem: Creating Keys for StORages Has Become My Main Skill
+Contest: Codeforces Round 1006 (Div. 3) (id=2072)
+URL: https://codeforces.com/contest/2072/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2072,
+  "index": "C",
+  "name": "Creating Keys for StORages Has Become My Main Skill",
+  "type": "PROGRAMMING",
+  "rating": 1200,
+  "tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

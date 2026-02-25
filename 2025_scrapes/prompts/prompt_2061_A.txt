@@ -1,0 +1,18 @@
+Problem: Kevin and Arithmetic
+Contest: IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2) (id=2061)
+URL: https://codeforces.com/contest/2061/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2061,
+  "index": "A",
+  "name": "Kevin and Arithmetic",
+  "type": "PROGRAMMING",
+  "points": 500.0,
+  "rating": 800,
+  "tags": [
+    "math"
+  ]
+}
+
+Instruction: Solve.

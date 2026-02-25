@@ -1,0 +1,18 @@
+Problem: Farmer John's Card Game
+Contest: Codeforces Round 998 (Div. 3) (id=2060)
+URL: https://codeforces.com/contest/2060/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2060,
+  "index": "B",
+  "name": "Farmer John's Card Game",
+  "type": "PROGRAMMING",
+  "rating": 1000,
+  "tags": [
+    "greedy",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

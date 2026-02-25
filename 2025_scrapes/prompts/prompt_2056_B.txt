@@ -1,0 +1,22 @@
+Problem: Find the Permutation
+Contest: Codeforces Round 997 (Div. 2) (id=2056)
+URL: https://codeforces.com/contest/2056/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2056,
+  "index": "B",
+  "name": "Find the Permutation",
+  "type": "PROGRAMMING",
+  "points": 1250.0,
+  "rating": 1300,
+  "tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "implementation",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

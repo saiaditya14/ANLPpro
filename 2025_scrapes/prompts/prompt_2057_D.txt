@@ -1,0 +1,22 @@
+Problem: Gifts Order
+Contest: Hello 2025 (id=2057)
+URL: https://codeforces.com/contest/2057/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2057,
+  "index": "D",
+  "name": "Gifts Order",
+  "type": "PROGRAMMING",
+  "points": 2250.0,
+  "rating": 2000,
+  "tags": [
+    "data structures",
+    "greedy",
+    "implementation",
+    "math",
+    "matrices"
+  ]
+}
+
+Instruction: Solve.

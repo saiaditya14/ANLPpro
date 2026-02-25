@@ -1,0 +1,17 @@
+Problem: Fibonacciness
+Contest: Codeforces Round 998 (Div. 3) (id=2060)
+URL: https://codeforces.com/contest/2060/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2060,
+  "index": "A",
+  "name": "Fibonacciness",
+  "type": "PROGRAMMING",
+  "rating": 800,
+  "tags": [
+    "brute force"
+  ]
+}
+
+Instruction: Solve.

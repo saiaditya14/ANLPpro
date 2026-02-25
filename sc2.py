@@ -181,15 +181,20 @@ def fetch_submissions(session: requests.Session, contest_id: int, page_size: int
     return all_subs
 
 def compute_rates_allwa(problems: List[Dict[str,Any]], submissions: List[Dict[str,Any]],
-                        exclude_participant_types: List[str]) -> List[Tuple[Dict[str,Any], int, int, float]]:
+                        exclude_participant_types: List[str], max_rating: int = 3500) -> List[Tuple[Dict[str,Any], int, int, float]]:
     """
     Count every relevant submission:
       - Relevant = verdict not null, verdict != 'TESTING', verdict != 'COMPILATION_ERROR'
       - WA_count = number of submissions whose verdict == 'WRONG_ANSWER'
       - total_count = number of relevant submissions (all verdicts except testing/ce/null)
     Excludes submissions where author.participantType is in exclude_participant_types.
+    Also filters out problems with rating > max_rating (if rating is present).
     """
-    probs_by_index = {p["index"]: p for p in problems}
+    probs_by_index = {
+        p["index"]: p 
+        for p in problems 
+        if p.get("rating", 0) <= max_rating
+    }
     # initialize counts
     counts = {pidx: {"wa": 0, "total": 0} for pidx in probs_by_index.keys()}
     for s in submissions:
@@ -257,6 +262,7 @@ def main():
     parser.add_argument("--start", required=True, help="Start date YYYY-MM-DD (inclusive)")
     parser.add_argument("--end", required=True, help="End date YYYY-MM-DD (inclusive)")
     parser.add_argument("--wa-threshold", required=True, type=float, help="WA threshold as decimal (e.g., 0.2)")
+    parser.add_argument("--max-rating", type=int, default=3500, help="Filter out problems with rating higher than this (default: 3500)")
     parser.add_argument("--outdir", default="cf_flags_output_allwa", help="Output dir")
     parser.add_argument("--page-size", type=int, default=5000)
     parser.add_argument("--min-delay", type=float, default=5.0)
@@ -304,7 +310,7 @@ def main():
             problems = fetch_problems(session, cid)
             time.sleep(random.uniform(args.min_delay, args.max_delay))
             subs = fetch_submissions(session, cid, page_size=args.page_size, min_delay=args.min_delay, max_delay=args.max_delay)
-            rates = compute_rates_allwa(problems, subs, exclude_participant_types=exclude_types)
+            rates = compute_rates_allwa(problems, subs, exclude_participant_types=exclude_types, max_rating=args.max_rating)
             flagged = [(p, wa, total, wa_rate) for (p, wa, total, wa_rate) in rates if total > 0 and wa_rate >= args.wa_threshold]
             if flagged:
                 print(f"  Flagged {len(flagged)} problems in contest {cid}")

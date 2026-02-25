@@ -1,0 +1,18 @@
+Problem: Final Verdict
+Contest: Codeforces Round 1008 (Div. 2) (id=2078)
+URL: https://codeforces.com/contest/2078/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2078,
+  "index": "A",
+  "name": "Final Verdict",
+  "type": "PROGRAMMING",
+  "points": 500.0,
+  "rating": 800,
+  "tags": [
+    "math"
+  ]
+}
+
+Instruction: Solve.

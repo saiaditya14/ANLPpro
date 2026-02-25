@@ -1,0 +1,17 @@
+Problem: Subtract Min Sort
+Contest: Codeforces Round 998 (Div. 3) (id=2060)
+URL: https://codeforces.com/contest/2060/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2060,
+  "index": "D",
+  "name": "Subtract Min Sort",
+  "type": "PROGRAMMING",
+  "rating": 1100,
+  "tags": [
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

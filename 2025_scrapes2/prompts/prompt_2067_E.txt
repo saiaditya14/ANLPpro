@@ -1,0 +1,20 @@
+Problem: White Magic
+Contest: Codeforces Round 1004 (Div. 2) (id=2067)
+URL: https://codeforces.com/contest/2067/problem/E
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2067,
+  "index": "E",
+  "name": "White Magic",
+  "type": "PROGRAMMING",
+  "points": 1750.0,
+  "rating": 1900,
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ]
+}
+
+Instruction: Solve.

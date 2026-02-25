@@ -1,0 +1,22 @@
+Problem: White Magic
+Contest: Codeforces Round 1004 (Div. 1) (id=2066)
+URL: https://codeforces.com/contest/2066/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2066,
+  "index": "B",
+  "name": "White Magic",
+  "type": "PROGRAMMING",
+  "points": 750.0,
+  "rating": 1900,
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "dp",
+    "greedy",
+    "implementation"
+  ]
+}
+
+Instruction: Solve.

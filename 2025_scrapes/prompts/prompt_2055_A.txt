@@ -1,0 +1,21 @@
+Problem: Two Frogs
+Contest: Codeforces Round 996 (Div. 2) (id=2055)
+URL: https://codeforces.com/contest/2055/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2055,
+  "index": "A",
+  "name": "Two Frogs",
+  "type": "PROGRAMMING",
+  "points": 500.0,
+  "rating": 800,
+  "tags": [
+    "constructive algorithms",
+    "games",
+    "greedy",
+    "math"
+  ]
+}
+
+Instruction: Solve.

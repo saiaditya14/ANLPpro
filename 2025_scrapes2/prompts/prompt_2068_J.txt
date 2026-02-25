@@ -1,0 +1,18 @@
+Problem: The Ultimate Wine Tasting Event
+Contest: European Championship 2025 - Online Mirror (Unrated, ICPC Rules, Teams Preferred) (id=2068)
+URL: https://codeforces.com/contest/2068/problem/J
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2068,
+  "index": "J",
+  "name": "The Ultimate Wine Tasting Event",
+  "type": "PROGRAMMING",
+  "rating": 2000,
+  "tags": [
+    "combinatorics",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

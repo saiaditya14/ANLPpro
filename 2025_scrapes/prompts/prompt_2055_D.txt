@@ -1,0 +1,20 @@
+Problem: Scarecrow
+Contest: Codeforces Round 996 (Div. 2) (id=2055)
+URL: https://codeforces.com/contest/2055/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2055,
+  "index": "D",
+  "name": "Scarecrow",
+  "type": "PROGRAMMING",
+  "points": 2250.0,
+  "rating": 2000,
+  "tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,22 @@
+Problem: Bro Thinks He's Him
+Contest: Codeforces Round 1003 (Div. 4) (id=2065)
+URL: https://codeforces.com/contest/2065/problem/H
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2065,
+  "index": "H",
+  "name": "Bro Thinks He's Him",
+  "type": "PROGRAMMING",
+  "rating": 2200,
+  "tags": [
+    "combinatorics",
+    "data structures",
+    "divide and conquer",
+    "dp",
+    "math",
+    "matrices"
+  ]
+}
+
+Instruction: Solve.

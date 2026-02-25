@@ -1,0 +1,20 @@
+Problem: Game of Mathletes
+Contest: Codeforces Round 998 (Div. 3) (id=2060)
+URL: https://codeforces.com/contest/2060/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2060,
+  "index": "C",
+  "name": "Game of Mathletes",
+  "type": "PROGRAMMING",
+  "rating": 900,
+  "tags": [
+    "games",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ]
+}
+
+Instruction: Solve.

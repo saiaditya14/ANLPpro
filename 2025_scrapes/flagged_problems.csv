@@ -1,0 +1,49 @@
+contestId,contestName,problemIndex,problemName,waRate,totalSubs,problemUrl
+2057,Hello 2025,A,MEX Table,0.2301,21111,https://codeforces.com/contest/2057/problem/A
+2057,Hello 2025,B,Gorilla and the Exam,0.2682,19713,https://codeforces.com/contest/2057/problem/B
+2057,Hello 2025,C,Trip to the Olympiad,0.7377,25797,https://codeforces.com/contest/2057/problem/C
+2057,Hello 2025,D,Gifts Order,0.2460,5074,https://codeforces.com/contest/2057/problem/D
+2055,Codeforces Round 996 (Div. 2),A,Two Frogs,0.2877,29498,https://codeforces.com/contest/2055/problem/A
+2055,Codeforces Round 996 (Div. 2),B,Crafting,0.5905,40384,https://codeforces.com/contest/2055/problem/B
+2055,Codeforces Round 996 (Div. 2),C,The Trail,0.5163,16127,https://codeforces.com/contest/2055/problem/C
+2055,Codeforces Round 996 (Div. 2),D,Scarecrow,0.5970,2742,https://codeforces.com/contest/2055/problem/D
+2056,Codeforces Round 997 (Div. 2),B,Find the Permutation,0.5503,21982,https://codeforces.com/contest/2056/problem/B
+2056,Codeforces Round 997 (Div. 2),C,Palindromic Subsequences,0.5052,17945,https://codeforces.com/contest/2056/problem/C
+2056,Codeforces Round 997 (Div. 2),D,Unique Median,0.2570,2731,https://codeforces.com/contest/2056/problem/D
+2060,Codeforces Round 998 (Div. 3),A,Fibonacciness,0.2549,35004,https://codeforces.com/contest/2060/problem/A
+2060,Codeforces Round 998 (Div. 3),B,Farmer John's Card Game,0.3786,32604,https://codeforces.com/contest/2060/problem/B
+2060,Codeforces Round 998 (Div. 3),C,Game of Mathletes,0.3057,34174,https://codeforces.com/contest/2060/problem/C
+2060,Codeforces Round 998 (Div. 3),D,Subtract Min Sort,0.3410,23721,https://codeforces.com/contest/2060/problem/D
+2060,Codeforces Round 998 (Div. 3),E,Graph Composition,0.6292,17963,https://codeforces.com/contest/2060/problem/E
+2060,Codeforces Round 998 (Div. 3),F,Multiplicative Arrays,0.2981,1506,https://codeforces.com/contest/2060/problem/F
+2060,Codeforces Round 998 (Div. 3),G,Bugged Sort,0.6912,1101,https://codeforces.com/contest/2060/problem/G
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",A,Kevin and Arithmetic,0.2950,18979,https://codeforces.com/contest/2061/problem/A
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",B,Kevin and Geometry,0.4717,17158,https://codeforces.com/contest/2061/problem/B
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",C,Kevin and Puzzle,0.3029,8523,https://codeforces.com/contest/2061/problem/C
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",D,Kevin and Numbers,0.4980,12342,https://codeforces.com/contest/2061/problem/D
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",E,Kevin and And,0.5773,5235,https://codeforces.com/contest/2061/problem/E
+2061,"IAEPC Preliminary Contest (Codeforces Round 999, Div. 1 + Div. 2)",F1,Kevin and Binary String (Easy Version),0.4111,2007,https://codeforces.com/contest/2061/problem/F1
+2063,Codeforces Round 1000 (Div. 2),A,Minimal Coprime,0.2165,24137,https://codeforces.com/contest/2063/problem/A
+2063,Codeforces Round 1000 (Div. 2),B,Subsequence Update,0.5665,30384,https://codeforces.com/contest/2063/problem/B
+2063,Codeforces Round 1000 (Div. 2),C,Remove Exactly Two,0.7065,26677,https://codeforces.com/contest/2063/problem/C
+2063,Codeforces Round 1000 (Div. 2),D,Game With Triangles,0.4694,3649,https://codeforces.com/contest/2063/problem/D
+2063,Codeforces Round 1000 (Div. 2),E,Triangle Tree,0.2566,1103,https://codeforces.com/contest/2063/problem/E
+2063,Codeforces Round 1000 (Div. 2),F1,Counting Is Not Fun (Easy Version),0.4587,606,https://codeforces.com/contest/2063/problem/F1
+2062,"Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2)",B,Clockwork,0.3833,21515,https://codeforces.com/contest/2062/problem/B
+2062,"Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2)",C,Cirno and Operations,0.5689,24404,https://codeforces.com/contest/2062/problem/C
+2062,"Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2)",D,Balanced Tree,0.4665,2613,https://codeforces.com/contest/2062/problem/D
+2062,"Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2)",E1,The Game (Easy Version),0.5920,5193,https://codeforces.com/contest/2062/problem/E1
+2059,Codeforces Round 1002 (Div. 2),A,Milya and Two Arrays,0.2735,27480,https://codeforces.com/contest/2059/problem/A
+2059,Codeforces Round 1002 (Div. 2),B,Cost of the Array,0.5617,22240,https://codeforces.com/contest/2059/problem/B
+2059,Codeforces Round 1002 (Div. 2),C,Customer Service,0.6306,14740,https://codeforces.com/contest/2059/problem/C
+2059,Codeforces Round 1002 (Div. 2),D,Graph and Graph,0.2239,3752,https://codeforces.com/contest/2059/problem/D
+2065,Codeforces Round 1003 (Div. 4),B,Skibidus and Ohio,0.4639,47101,https://codeforces.com/contest/2065/problem/B
+2065,Codeforces Round 1003 (Div. 4),C1,Skibidus and Fanum Tax (easy version),0.6930,52048,https://codeforces.com/contest/2065/problem/C1
+2065,Codeforces Round 1003 (Div. 4),C2,Skibidus and Fanum Tax (hard version),0.5496,20596,https://codeforces.com/contest/2065/problem/C2
+2065,Codeforces Round 1003 (Div. 4),D,Skibidus and Sigma,0.2844,15268,https://codeforces.com/contest/2065/problem/D
+2065,Codeforces Round 1003 (Div. 4),E,Skibidus and Rizz,0.6129,11141,https://codeforces.com/contest/2065/problem/E
+2065,Codeforces Round 1003 (Div. 4),F,Skibidus and Slay,0.2588,3790,https://codeforces.com/contest/2065/problem/F
+2065,Codeforces Round 1003 (Div. 4),G,Skibidus and Capping,0.3669,3769,https://codeforces.com/contest/2065/problem/G
+2065,Codeforces Round 1003 (Div. 4),H,Bro Thinks He's Him,0.2722,1363,https://codeforces.com/contest/2065/problem/H
+2066,Codeforces Round 1004 (Div. 1),A,Object Identification,0.5982,2939,https://codeforces.com/contest/2066/problem/A
+2066,Codeforces Round 1004 (Div. 1),B,White Magic,0.3448,1540,https://codeforces.com/contest/2066/problem/B

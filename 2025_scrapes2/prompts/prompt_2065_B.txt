@@ -1,0 +1,17 @@
+Problem: Skibidus and Ohio
+Contest: Codeforces Round 1003 (Div. 4) (id=2065)
+URL: https://codeforces.com/contest/2065/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2065,
+  "index": "B",
+  "name": "Skibidus and Ohio",
+  "type": "PROGRAMMING",
+  "rating": 800,
+  "tags": [
+    "strings"
+  ]
+}
+
+Instruction: Solve.

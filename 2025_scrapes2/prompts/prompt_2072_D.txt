@@ -1,0 +1,19 @@
+Problem: For Wizards, the Exam Is Easy, but I Couldn't Handle It
+Contest: Codeforces Round 1006 (Div. 3) (id=2072)
+URL: https://codeforces.com/contest/2072/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2072,
+  "index": "D",
+  "name": "For Wizards, the Exam Is Easy, but I Couldn't Handle It",
+  "type": "PROGRAMMING",
+  "rating": 1300,
+  "tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ]
+}
+
+Instruction: Solve.

@@ -1,0 +1,19 @@
+Problem: Skibidus and Fanum Tax (easy version)
+Contest: Codeforces Round 1003 (Div. 4) (id=2065)
+URL: https://codeforces.com/contest/2065/problem/C1
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2065,
+  "index": "C1",
+  "name": "Skibidus and Fanum Tax (easy version)",
+  "type": "PROGRAMMING",
+  "rating": 1100,
+  "tags": [
+    "binary search",
+    "dp",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

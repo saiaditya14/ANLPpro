@@ -1,0 +1,22 @@
+Problem: Breach of Faith
+Contest: Codeforces Round 1008 (Div. 2) (id=2078)
+URL: https://codeforces.com/contest/2078/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2078,
+  "index": "C",
+  "name": "Breach of Faith",
+  "type": "PROGRAMMING",
+  "points": 1250.0,
+  "rating": 1500,
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "probabilities",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

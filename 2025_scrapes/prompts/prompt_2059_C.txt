@@ -1,0 +1,23 @@
+Problem: Customer Service
+Contest: Codeforces Round 1002 (Div. 2) (id=2059)
+URL: https://codeforces.com/contest/2059/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2059,
+  "index": "C",
+  "name": "Customer Service",
+  "type": "PROGRAMMING",
+  "points": 1500.0,
+  "rating": 1600,
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "graph matchings",
+    "greedy",
+    "math",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

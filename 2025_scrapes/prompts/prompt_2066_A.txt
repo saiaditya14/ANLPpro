@@ -1,0 +1,21 @@
+Problem: Object Identification
+Contest: Codeforces Round 1004 (Div. 1) (id=2066)
+URL: https://codeforces.com/contest/2066/problem/A
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2066,
+  "index": "A",
+  "name": "Object Identification",
+  "type": "PROGRAMMING",
+  "points": 750.0,
+  "rating": 1400,
+  "tags": [
+    "graphs",
+    "greedy",
+    "implementation",
+    "interactive"
+  ]
+}
+
+Instruction: Solve.

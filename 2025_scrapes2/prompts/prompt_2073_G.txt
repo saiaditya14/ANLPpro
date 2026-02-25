@@ -1,0 +1,15 @@
+Problem: Corrupted File
+Contest: 2025 ICPC Asia Pacific Championship - Online Mirror (Unrated, Online Mirror, ICPC Rules, Teams Preferred) (id=2073)
+URL: https://codeforces.com/contest/2073/problem/G
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2073,
+  "index": "G",
+  "name": "Corrupted File",
+  "type": "PROGRAMMING",
+  "rating": 2200,
+  "tags": []
+}
+
+Instruction: Solve.

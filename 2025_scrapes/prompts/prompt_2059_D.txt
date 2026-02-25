@@ -1,0 +1,21 @@
+Problem: Graph and Graph
+Contest: Codeforces Round 1002 (Div. 2) (id=2059)
+URL: https://codeforces.com/contest/2059/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2059,
+  "index": "D",
+  "name": "Graph and Graph",
+  "type": "PROGRAMMING",
+  "points": 2000.0,
+  "rating": 1900,
+  "tags": [
+    "data structures",
+    "graphs",
+    "greedy",
+    "shortest paths"
+  ]
+}
+
+Instruction: Solve.

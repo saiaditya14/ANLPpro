@@ -1,0 +1,19 @@
+Problem: Cirno and Operations
+Contest: Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2) (id=2062)
+URL: https://codeforces.com/contest/2062/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2062,
+  "index": "C",
+  "name": "Cirno and Operations",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1200,
+  "tags": [
+    "brute force",
+    "math"
+  ]
+}
+
+Instruction: Solve.

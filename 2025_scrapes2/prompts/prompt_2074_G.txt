@@ -1,0 +1,18 @@
+Problem: Game With Triangles: Season 2
+Contest: Codeforces Round 1009 (Div. 3) (id=2074)
+URL: https://codeforces.com/contest/2074/problem/G
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2074,
+  "index": "G",
+  "name": "Game With Triangles: Season 2",
+  "type": "PROGRAMMING",
+  "rating": 2100,
+  "tags": [
+    "dp",
+    "geometry"
+  ]
+}
+
+Instruction: Solve.

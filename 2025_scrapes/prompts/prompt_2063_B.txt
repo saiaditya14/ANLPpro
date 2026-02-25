@@ -1,0 +1,21 @@
+Problem: Subsequence Update
+Contest: Codeforces Round 1000 (Div. 2) (id=2063)
+URL: https://codeforces.com/contest/2063/problem/B
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2063,
+  "index": "B",
+  "name": "Subsequence Update",
+  "type": "PROGRAMMING",
+  "points": 1000.0,
+  "rating": 1100,
+  "tags": [
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

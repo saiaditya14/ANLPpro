@@ -52,7 +52,7 @@ except Exception:
 
 # ---------- Config ----------
 DEFAULT_MODEL = "models/gemini-2.5-pro"
-SCREENSHOTS_DIR = Path("screenshots2")
+SCREENSHOTS_DIR = Path("screenshots3")
 OUTPUT_DIR = Path("outputs")
 PROMPT_BASE = (
     "Hey — below is a screenshot. First: say whether the image shows the full problem statement and "

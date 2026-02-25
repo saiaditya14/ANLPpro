@@ -1,0 +1,27 @@
+Problem: Counting Is Not Fun (Easy Version)
+Contest: Codeforces Round 1000 (Div. 2) (id=2063)
+URL: https://codeforces.com/contest/2063/problem/F1
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2063,
+  "index": "F1",
+  "name": "Counting Is Not Fun (Easy Version)",
+  "type": "PROGRAMMING",
+  "points": 1750.0,
+  "rating": 2400,
+  "tags": [
+    "combinatorics",
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "dsu",
+    "graphs",
+    "hashing",
+    "implementation",
+    "math",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

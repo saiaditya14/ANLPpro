@@ -1,0 +1,20 @@
+Problem: Scammy Game Ad
+Contest: Codeforces Round 1008 (Div. 2) (id=2078)
+URL: https://codeforces.com/contest/2078/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2078,
+  "index": "D",
+  "name": "Scammy Game Ad",
+  "type": "PROGRAMMING",
+  "points": 1750.0,
+  "rating": 1800,
+  "tags": [
+    "dp",
+    "greedy",
+    "implementation"
+  ]
+}
+
+Instruction: Solve.

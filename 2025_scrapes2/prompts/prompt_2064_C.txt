@@ -1,0 +1,21 @@
+Problem: Remove the Ends
+Contest: Codeforces Round 1005 (Div. 2) (id=2064)
+URL: https://codeforces.com/contest/2064/problem/C
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2064,
+  "index": "C",
+  "name": "Remove the Ends",
+  "type": "PROGRAMMING",
+  "points": 1250.0,
+  "rating": 1300,
+  "tags": [
+    "brute force",
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ]
+}
+
+Instruction: Solve.

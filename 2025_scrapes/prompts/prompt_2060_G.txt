@@ -1,0 +1,19 @@
+Problem: Bugged Sort
+Contest: Codeforces Round 998 (Div. 3) (id=2060)
+URL: https://codeforces.com/contest/2060/problem/G
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2060,
+  "index": "G",
+  "name": "Bugged Sort",
+  "type": "PROGRAMMING",
+  "rating": 2400,
+  "tags": [
+    "dp",
+    "greedy",
+    "sortings"
+  ]
+}
+
+Instruction: Solve.

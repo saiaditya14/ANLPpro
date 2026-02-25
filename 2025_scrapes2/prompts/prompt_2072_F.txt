@@ -1,0 +1,23 @@
+Problem: Goodbye, Banker Life
+Contest: Codeforces Round 1006 (Div. 3) (id=2072)
+URL: https://codeforces.com/contest/2072/problem/F
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2072,
+  "index": "F",
+  "name": "Goodbye, Banker Life",
+  "type": "PROGRAMMING",
+  "rating": 1700,
+  "tags": [
+    "2-sat",
+    "bitmasks",
+    "combinatorics",
+    "constructive algorithms",
+    "fft",
+    "math",
+    "number theory"
+  ]
+}
+
+Instruction: Solve.

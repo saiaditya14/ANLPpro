@@ -1,0 +1,26 @@
+Problem: Game With Triangles
+Contest: Codeforces Round 1000 (Div. 2) (id=2063)
+URL: https://codeforces.com/contest/2063/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2063,
+  "index": "D",
+  "name": "Game With Triangles",
+  "type": "PROGRAMMING",
+  "points": 2250.0,
+  "rating": 2000,
+  "tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "geometry",
+    "greedy",
+    "implementation",
+    "math",
+    "ternary search",
+    "two pointers"
+  ]
+}
+
+Instruction: Solve.

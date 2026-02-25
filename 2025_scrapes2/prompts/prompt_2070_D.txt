@@ -1,0 +1,19 @@
+Problem: Tree Jumps
+Contest: Educational Codeforces Round 175 (Rated for Div. 2) (id=2070)
+URL: https://codeforces.com/contest/2070/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2070,
+  "index": "D",
+  "name": "Tree Jumps",
+  "type": "PROGRAMMING",
+  "rating": 1600,
+  "tags": [
+    "dfs and similar",
+    "dp",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

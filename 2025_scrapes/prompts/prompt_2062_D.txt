@@ -1,0 +1,22 @@
+Problem: Balanced Tree
+Contest: Ethflow Round 1 (Codeforces Round 1001, Div. 1 + Div. 2) (id=2062)
+URL: https://codeforces.com/contest/2062/problem/D
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2062,
+  "index": "D",
+  "name": "Balanced Tree",
+  "type": "PROGRAMMING",
+  "points": 2000.0,
+  "rating": 2200,
+  "tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy",
+    "trees"
+  ]
+}
+
+Instruction: Solve.

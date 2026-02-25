@@ -1,0 +1,20 @@
+Problem: A, B, AB and BA
+Contest: Educational Codeforces Round 174 (Rated for Div. 2) (id=2069)
+URL: https://codeforces.com/contest/2069/problem/E
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2069,
+  "index": "E",
+  "name": "A, B, AB and BA",
+  "type": "PROGRAMMING",
+  "rating": 2300,
+  "tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings",
+    "strings"
+  ]
+}
+
+Instruction: Solve.

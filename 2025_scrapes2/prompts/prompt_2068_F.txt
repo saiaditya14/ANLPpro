@@ -1,0 +1,20 @@
+Problem: Mascot Naming
+Contest: European Championship 2025 - Online Mirror (Unrated, ICPC Rules, Teams Preferred) (id=2068)
+URL: https://codeforces.com/contest/2068/problem/F
+
+--- problem metadata (not full statement) ---
+{
+  "contestId": 2068,
+  "index": "F",
+  "name": "Mascot Naming",
+  "type": "PROGRAMMING",
+  "rating": 1900,
+  "tags": [
+    "brute force",
+    "greedy",
+    "implementation",
+    "strings"
+  ]
+}
+
+Instruction: Solve.
