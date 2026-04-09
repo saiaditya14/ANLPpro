@@ -1,0 +1,11 @@
+openai
+google-genai
+anthropic
+mistralai
+hydra-core
+omegaconf
+cloudscraper
+beautifulsoup4
+lxml
+python-dotenv
+pyyaml

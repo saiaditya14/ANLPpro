@@ -1,0 +1,84 @@
+models:
+  - name: gpt-5.4
+    provider: openai
+    api_key: ${oc.env:OPENAI_API_KEY}
+    model_id: gpt-5.4
+    base_url: null
+  - name: o3
+    provider: openai
+    api_key: ${oc.env:OPENAI_API_KEY}
+    model_id: o3
+    base_url: null
+    reasoning_effort: high    # optional: low, medium, high
+  - name: opus
+    provider: anthropic
+    api_key: ${oc.env:ANTHROPIC_API_KEY}
+    model_id: claude-opus-4-5
+    base_url: null
+    thinking_budget: 2000     # optional: budget in tokens for models that support it
+  - name: mistral
+    provider: mistral
+    api_key: ${oc.env:MISTRAL_API_KEY}
+    model_id: mistral-large-latest
+    base_url: null
+  - name: kimi
+    provider: moonshot
+    api_key: ${oc.env:MOONSHOT_API_KEY}
+    model_id: kimi-k2.5
+    base_url: https://api.moonshot.cn/v1
+  - name: gemini
+    provider: gemini
+    api_key: ${oc.env:GEMINI_API_KEYS}
+    model_id: gemini-3-flash-preview
+    base_url: null
+    thinking_budget: 2000     # optional: budget in tokens for models that support it
+
+# Which models to run (list of names from above, or ["all"])
+active_models:
+  - gemini
+  # - gpt-5.4
+  # - o3
+  # - opus-4.5
+  # - mistral-large
+  # - kimi-k2.5
+  # - gemini-3.1-pro
+
+tests:
+  k: 3  # number of attempts per scenario
+  with_samples:
+    enabled: true       # pass@k with original problem statement
+  without_samples:
+    enabled: true       # pass@k with sample I/O stripped
+  fudged_samples:
+    enabled: true       # pass@k with wrong/modified sample I/O
+  semantic_perturbation:
+    enabled: true
+    num_variations: 3   # number of rephrasings to generate & solve
+
+codeforces:
+  cookies: ${oc.env:COOKIES}
+  program_type_id: 91  # GNU G++23 14.2.0 (64 bit, MSYS2)
+  key: ${oc.env:KEY}
+  secret: ${oc.env:SECRET}
+  tta: "33"
+  adcd1e: "caf4fvvldo2aa9"
+  turnstile_token: ${oc.env:TURNSTILE_TOKEN} # If present, will be passed to CF
+  submit_timeout: 30       # seconds to wait for CF submission response
+  poll_interval: 5         # seconds between verdict polling
+  delay_between_submits: 2 # seconds between submits to avoid rate limit
+  submit_solutions: false   # whether to actually submit to CF
+
+problems:
+  csv_path: "test.csv"
+
+prompt: "Solve this competitive programming problem in C++. Return ONLY the complete C++ code inside a single ```cpp code block.\n\n"
+
+user_handle: "anlp_proj"
+
+llm:
+  max_retries: 3
+  retry_delay: 5       # seconds between retries
+  request_timeout: 120  # seconds per LLM request
+
+output:
+  results_dir: "results"
